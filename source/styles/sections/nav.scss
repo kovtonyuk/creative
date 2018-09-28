@@ -1,0 +1,38 @@
+#menu {
+  width: 70%;
+}
+
+.nav-menu {
+  padding: 5px 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  color: #777777;
+
+  li {
+    list-style: none;
+    margin-right: 29px;
+    text-transform: uppercase;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    font-family: $ff-menu;
+    font-size: 0.875rem;
+    color: #777777;
+    text-decoration: none;
+  }
+
+  a:hover {
+    padding: 19px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+  }
+}
