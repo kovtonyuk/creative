@@ -55,7 +55,7 @@ gulp.task('js', function() {
 /*------------ jQuery ------------*/
 // gulp.task('jquery', function() {
 //     return gulp.src([
-//         'source/js/jquery.js'
+//         'source/js/jQuery.js'
 //     ])
 //         .pipe(sourcemaps.init())
 //         .pipe(concat('jquery.min.js'))
