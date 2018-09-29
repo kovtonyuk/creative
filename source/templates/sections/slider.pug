@@ -1,11 +1,20 @@
-input#one(type='radio', name='carousel-state', checked='')
-input#two(type='radio', name='carousel-state')
-input#three(type='radio', name='carousel-state')
-.controls
-    label.one(for='one')
-    label.two(for='two')
-    label.three(for='three')
-ul.things
-    li.one 1
-    li.two 2
-    li.three 3
+#carouselExampleControls.carousel.slide(data-ride='carousel')
+
+    // Carousel sliders
+    .carousel-inner
+        .carousel-item.active
+            img.d-block.w-100(src='images/slider_1.png', alt='First slide')
+        .carousel-item
+            img.d-block.w-100(src='images/slider_2.png', alt='Second slide')
+        .carousel-item
+            img.d-block.w-100(src='images/slider_3.png', alt='Third slide')
+
+    //Carousel controls
+    a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+        span.carousel-control-prev-icon
+            i.fas.fa-angle-left
+        span.sr-only Previous
+    a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+        span.carousel-control-next-icon
+            i.fas.fa-angle-right
+        span.sr-only Next

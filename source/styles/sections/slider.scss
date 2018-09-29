@@ -1,64 +1,88 @@
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-size: 1em;
-  background-color: #ddd;
+.carousel {
+  position: relative;
 }
 
-input[name="carousel-state"] {
-  position: absolute;
-  left: -10000px;
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-label {
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
   display: block;
-  padding: .5em;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  transition: transform .6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.w-100 {
+  width: 100%!important;
+}
+
+.d-block {
+  display: block!important;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*----- Slider controls ----*/
+
+.carousel-control-next,
+.carousel-control-prev {
   position: absolute;
-  background-color: #ddd;
-  top: 130px;
-  width: 70px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  color: #777777;
   text-align: center;
-  &:hover {
-    background-color: #fff;
-  }
+  opacity: .5;
+  font-size: 2.375rem;
 }
 
-#one:checked ~ .controls .three, #two:checked ~ .controls .one, #three:checked ~ .controls .two {
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  color: #ff9c00;
+}
+
+.carousel-control-prev {
   left: 0;
-  display: block;
 }
 
-#one:checked ~ .controls .two, #two:checked ~ .controls .three, #three:checked ~ .controls .one {
+.carousel-control-next {
   right: 0;
-  display: block;
 }
 
-#one:checked ~ .controls .three:after, #two:checked ~ .controls .one:after, #three:checked ~ .controls .two:after {
-  content: 'Prev';
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
 }
 
-#one:checked ~ .controls .two:after, #two:checked ~ .controls .three:after, #three:checked ~ .controls .one:after {
-  content: 'Next';
-}
-
-.things {
-  font-size: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
   padding: 0;
-  margin: 0;
-  list-style: none;
-  li {
-    padding: 0;
-    margin: 0;
-    background-color: #eee;
-    height: 300px;
-    width: 100%;
-    display: none;
-    text-align: center;
-    line-height: 300px;
-    font-size: 100px;
-  }
-}
-
-#one:checked ~ .things .one, #two:checked ~ .things .two, #three:checked ~ .things .three {
-  display: block;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
 }
