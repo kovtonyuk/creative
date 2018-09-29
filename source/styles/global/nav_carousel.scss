@@ -34,7 +34,7 @@
 /*------------ Carousel hero control ------------*/
 .controls {
   position: absolute;
-  top: 0;
+  top: -40px;
   bottom: 0;
   display: flex;
   align-items: center;
@@ -47,8 +47,8 @@
 .carousel-control {
   display: inline-block;
   width: 100%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 6%;
+  margin-left: 9%;
   vertical-align: bottom;
 }
 

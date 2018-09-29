@@ -1,0 +1,27 @@
+.btn {
+  padding: 15px 30px;
+}
+
+.button--text {
+  text-transform: uppercase;
+}
+
+.button_orange {
+  color: #fff;
+  background: #ff9c00;
+
+  &:hover {
+    color: #ff9c00;
+    background: #131313;
+  }
+}
+
+.button_black {
+  color: #ff9c00;
+  background: #131313;
+
+  &:hover {
+    color: #fff;
+    background: #ff9c00;
+  }
+}
