@@ -1,5 +1,93 @@
 #home
-    .container
-        .header
-            a(href="#home").logo: img.logo__picture(src="images/logo.png" alt="logo")
-            include nav
+    header
+        .container
+            .header
+                a(href="#home").logo: img.logo__picture(src="images/logo.png" alt="logo")
+                include nav
+    include slider
+
+    .portfolio__section
+        .container
+            h5.section__title portfolio
+            p.section__description Lorem ipsum dolor sit amet,
+                span.section__description--accent consectetur adipiscing elit.
+                span.section__description Integer sed magna vel velit dignissim luctus eu
+                in urna. Dapibus egestas turpis.
+
+            include nav_sort
+
+            .portfolio__wrapper
+
+                //Work 1
+                .portfolio__item
+                    img(src="images/portfolio_1.png" alt="portfolio_1")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+                //Work 2
+                .portfolio__item
+                    img(src="images/portfolio_2.png" alt="portfolio_2")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+                //Work 3
+                .portfolio__item
+                    img(src="images/portfolio_3.png" alt="portfolio_3")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+                //Work 4
+                .portfolio__item
+                    img(src="images/portfolio_4.png" alt="portfolio_4")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+                //Work 5
+                .portfolio__item
+                    img(src="images/portfolio_5.png" alt="portfolio_5")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+                //Work 6
+                .portfolio__item
+                    img(src="images/portfolio_6.png" alt="portfolio_6")
+                    //Hover block
+                    .portfolio__description
+                        .portfolio__description--icon
+                            i.fas.fa-plus
+                        .portfolio__header design name
+                        .portfolio__text.services__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus eu ligula
+                            ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+
+            .btn.button_black.button--text load more

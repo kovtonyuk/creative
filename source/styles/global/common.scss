@@ -8,3 +8,22 @@ body {
   max-width: 912px;
   margin: auto;
 }
+
+.title__uppercase {
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-family: $ff-menu;
+  font-size: 1.5rem;
+  margin: 47px 0 32px;
+}
+
+.section__description {
+  font-family: $ff-menu;
+  font-size: .8rem;
+}
+
+.section__description--accent {
+  color: #ff9c00;
+}
