@@ -1,3 +1,4 @@
+/* Basic Style */
 body {
   margin: 0;
   color: #777777;
@@ -8,6 +9,8 @@ body {
   max-width: 912px;
   margin: auto;
 }
+
+/* Title on pages */
 
 .title__uppercase {
   text-transform: uppercase;
@@ -26,4 +29,9 @@ body {
 
 .section__description--accent {
   color: #ff9c00;
+}
+
+/* Pages Style*/
+#home {
+  background: #fafafa;
 }
