@@ -1,26 +1,12 @@
-#myCarousel.carousel.slide
-
-    // Indicators
-    //ul.carousel-indicators
-    //    li.item1.active
-    //    li.item2
-    //    li.item3
-
+#hero__carousel.carousel.slide(data-ride='.hero_carousel').hero_carousel
     // Wrapper for slides
     .carousel-inner
-        .carousel-item.active
-            img.d-block.w-100(src='images/slider_1.png' width="1100" height="500")
-        .carousel-item
-            img.d-block.w-100(src='images/slider_2.png' width="1100" height="500")
-        .carousel-item
-            img.d-block.w-100(src='images/slider_3.png' width="1100" height="500")
-
-    // Left and right controls
-    a.carousel-control-prev(href='#myCarousel', role='button')
-        span.carousel-control-prev-icon
-            i.fas.fa-angle-left
-        span.sr-only Previous
-    a.carousel-control-next(href='#myCarousel', role='button')
-        span.carousel-control-next-icon
-            i.fas.fa-angle-right
-        span.sr-only Next
+        //Slide 1
+        .item.active
+            img.d-block.w-100(src='images/slider_1.png' alt="slide_1")
+        //Slide 2
+        .item
+            img.d-block.w-100(src='images/slider_2.png' alt="slide_2")
+        //Slide 3
+        .item
+            img.d-block.w-100(src='images/slider_3.png' alt="slide_3")
