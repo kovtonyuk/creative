@@ -11,19 +11,18 @@ body {
 }
 
 /* Title on pages */
-
 .title__uppercase {
   text-transform: uppercase;
 }
 
 .section__title {
-  font-family: $ff-menu;
+  font-family: Lato-Bold;
   font-size: 1.5rem;
   margin: 47px 0 32px;
 }
 
 .section__description {
-  font-family: $ff-menu;
+  font-family: Lato-Bold;
   font-size: .8rem;
 }
 

@@ -14,12 +14,12 @@
   width: 33%;
   padding: 0;
   position: relative;
+}
 
-  img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+.portfolio__item img {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio__description {
@@ -31,7 +31,7 @@
   background: #131313;
   padding: 80px 20px 30px;
   text-align: center;
-  font-family: $ff-main--text;
+  font-family: Lato-Regular;
   color: #fff;
   z-index: 3;
 }

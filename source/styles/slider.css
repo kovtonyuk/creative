@@ -4,22 +4,22 @@
 
 .carousel-inner {
   position: relative;
+}
 
-  img {
-    width: 100%;
-    height: auto;
-  }
+.item {
+  display: none;
+  position: relative;
+  transition: .6s ease-in-out left;
+}
 
-  .item {
-    display: none;
-    position: relative;
-    transition: .6s ease-in-out left;
-  }
+img {
+  width: 100%;
+  height: auto;
+}
 
-  .active {
-    display: block;
-    left: 0;
-  }
+.active {
+  display: block;
+  left: 0;
 }
 
 /* Text */
@@ -50,19 +50,19 @@
 .slide__title {
   background: #131313;
   padding: 0 0 4px;
-  font-family: $ff-hero--slider;
+  font-family: Lato-Thin;
   font-size: 2.65rem;
   font-weight: 100;
   margin-bottom: 20px;
+}
 
-  &_orange {
-    margin-left: 10px;
-    color: #ff9c00;
-  }
+.slide__title_orange {
+  margin-left: 10px;
+  color: #ff9c00;
 }
 
 .slider__text{
-  font-family: $ff-main--text;
+  font-family: Lato-Regular;
   font-size: .75rem;
   text-transform: uppercase;
   line-height: 1.5;

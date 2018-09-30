@@ -11,24 +11,24 @@
   list-style: none;
   text-align: center;
   float: left;
+}
 
-  &-item {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px 3px;
-    text-indent: -999px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #d0d0d0;
-  }
+.slider__dots-item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #d0d0d0;
+}
 
-  .active {
-    margin: 0 2px;
-    width: 12px;
-    height: 12px;
-    background-color: #71f6eb;
-  }
+.active {
+  margin: 0 2px;
+  width: 12px;
+  height: 12px;
+  background-color: #71f6eb;
 }
 
 /*------------ Carousel hero control ------------*/

@@ -18,14 +18,14 @@ footer {
 #footer .logo {
   width: 13%;
   margin: 17px auto;
-
-  &__picture {
-    width: 72%;
-  }
 }
 
+.logo__picture {
+   width: 72%;
+ }
+
 .copyright--text {
-  font-family: $ff-hero--slider-text;
+  font-family: Lato-Thin;
   font-size: .75rem;
   letter-spacing: 1px;
 }
