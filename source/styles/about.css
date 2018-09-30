@@ -1,6 +1,91 @@
 #about .hero {
     position: relative;
-    background: url(../images/about_hero.png) top right no-repeat #f0f0f2;
+    background: url(../images/about_hero.png) center right no-repeat #f0f0f2;
+    background-size: contain;
     width: 100%;
-    height: 351px;
+    height: 280px;
+}
+
+.about_section,
+.services_section,
+.teamwork_section {
+    text-align: center;
+}
+
+.services_wrapper {
+    margin: 62px 0;
+}
+
+.service__description--icon {
+    transform: rotate(-90deg);
+    font-size: 2rem;
+    color: #262626;
+}
+
+.service__description--icon:hover {
+    color: #fff;
+}
+
+.service__header {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.services__text {
+    color: #777777;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#hexagon {
+    width: 60px;
+    background: #fff;
+    height: 36px;
+    position: relative;
+    transform: rotate(90deg);
+    margin: 0 23px;
+    cursor: pointer;
+}
+
+#hexagon:hover {
+    background: #ff9c00;
+}
+
+#hexagon:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 18px solid #fff;
+}
+
+#hexagon:hover:before {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 18px solid #ff9c00;
+}
+
+#hexagon:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 18px solid #fff;
+}
+
+#hexagon:hover:after {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 18px solid #ff9c00;
 }
