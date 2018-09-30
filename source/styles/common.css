@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
+
 /* Basic Style */
 body {
   margin: 0;
@@ -16,14 +18,16 @@ body {
 }
 
 .section__title {
-  font-family: Lato-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
+  font-weight: 700;
   margin: 47px 0 32px;
 }
 
 .section__description {
-  font-family: Lato-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: .8rem;
+  font-weight: 700;
 }
 
 .section__description--accent {

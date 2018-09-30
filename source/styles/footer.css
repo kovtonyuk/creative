@@ -25,7 +25,8 @@ footer {
  }
 
 .copyright--text {
-  font-family: Lato-Thin;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
   font-size: .75rem;
   letter-spacing: 1px;
 }

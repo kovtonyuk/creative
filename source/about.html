@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="../build/css/main.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Creative</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header"><a class="logo" href="../build/index.html"><img class="logo__picture" src="../build/images/logo.png" alt="logo"></a>
-          <div class="nav-menu" id="menu">
-            <ul class="menu">
-              <li class="active"><a href="../build/index.html">Home</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><i class="fas fa-search"></i></li>
-            </ul>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/nav_sort.css">
+  <link rel="stylesheet" href="styles/nav_social.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/slider.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/nav_carousel.css">
+  <link rel="stylesheet" href="styles/button.css">
+  <link rel="stylesheet" href="styles/common.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Creative</title>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header"><a class="logo" href="index.html"><img class="logo__picture" src="images/logo.png" alt="logo"></a>
+      <div class="nav-menu" id="menu">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><i class="fas fa-search"></i></li>
+        </ul>
       </div>
-    </header>
-    <div id="about"></div>
-    <footer id="footer">
-      <div class="container">
-        <div class="footer">
-          <div class="footer--logo"><a class="logo" href="../build/index.html"><img class="logo__picture" src="../build/images/logo_footer.png" alt="logo"></a></div>
-          <div class="nav-menu--social" id="menu__social">
-            <ul class="menu--social">
-              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
-              <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
-              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-          </div>
-          <div class="copyright--text">Design by  Serhii Kovtoniuk</div>
-        </div>
+    </div>
+  </div>
+</header>
+<div id="about">
+
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="footer">
+      <div class="footer--logo"><a class="logo" href="index.html"><img class="logo__picture" src="images/logo_footer.png" alt="logo"></a></div>
+      <div class="nav-menu--social" id="menu__social">
+        <ul class="menu--social">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        </ul>
       </div>
-    </footer>
-    <script src="../build/js/jquery.min.js"></script>
-    <script src="../build/js/main.min.js"></script>
-  </body>
+      <div class="copyright--text">Design by  Serhii Kovtoniuk</div>
+    </div>
+  </div>
+</footer>
+<script src="jquery/jquery.js"></script>
+<script src="js/change_active_menu.js"></script>
+<script src="js/hover_portfolio.js"></script>
+<script src="js/slider.js"></script>
+</body>
 </html>

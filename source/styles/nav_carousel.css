@@ -24,13 +24,6 @@
   background-color: #d0d0d0;
 }
 
-.active {
-  margin: 0 2px;
-  width: 12px;
-  height: 12px;
-  background-color: #71f6eb;
-}
-
 /*------------ Carousel hero control ------------*/
 .controls {
   position: absolute;
