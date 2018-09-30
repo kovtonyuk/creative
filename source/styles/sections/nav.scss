@@ -36,3 +36,10 @@
     border-bottom: 2px solid #ff9c00;
   }
 }
+
+.menu li.active a {
+  padding: 19px 0;
+  color: #ff9c00;
+  border-top: 2px solid #ff9c00;
+  border-bottom: 2px solid #ff9c00;
+}

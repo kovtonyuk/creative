@@ -44,7 +44,8 @@ gulp.task('styles:compile', function() {
 gulp.task('js', function() {
     return gulp.src([
         'source/js/slider.js',
-        'source/js/hover.js'
+        'source/js/hover_portfolio.js',
+        'source/js/change_active_menu.js'
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
