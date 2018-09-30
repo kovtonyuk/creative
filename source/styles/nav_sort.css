@@ -14,15 +14,15 @@
   color: #777777;
 }
 
-#menu_sort li {
-  list-style: none;
-  margin-right: 29px;
-  text-transform: uppercase;
-}
+/*#menu_sort li {*/
+  /*list-style: none;*/
+  /*margin-right: 29px;*/
+  /*text-transform: uppercase;*/
+/*}*/
 
-#menu_sort li:last-child {
-  margin-right: 0;
-}
+/*#menu_sort li:last-child {*/
+  /*margin-right: 0;*/
+/*}*/
 
 #menu_sort a {
   font-family: 'Lato', sans-serif;

@@ -105,3 +105,14 @@ body {
   color: #fff;
   background: #ff9c00;
 }
+
+/*----- Style for navigation on pages -----*/
+li {
+  list-style: none;
+  margin-right: 29px;
+  text-transform: uppercase;
+}
+
+li:last-child {
+  margin-right: 0;
+}
