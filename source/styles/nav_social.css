@@ -2,11 +2,11 @@
   margin: 6px 0 30px;
 }
 
-.nav-menu--social {
+#menu__social .nav-menu--social {
   padding: 5px 0;
 }
 
-.menu--social {
+#menu__social .menu--social {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,17 +14,17 @@
   color: #777777;
 }
 
-li {
+#menu__social li {
   list-style: none;
   width: 63px;
   text-transform: uppercase;
 }
 
-li:last-child {
+#menu__social li:last-child {
   margin-right: 0;
 }
 
-a {
+#menu__social a {
   font-family: 'Lato', sans-serif;
   font-size: .7rem;
   font-weight: 700;
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+#menu__social a:hover {
   padding: 15px 20px;
   color: #ff9c00;
   border-top: 2px solid #ff9c00;

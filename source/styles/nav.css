@@ -2,28 +2,28 @@
   width: 70%;
 }
 
-.nav-menu {
+#menu .nav-menu {
   padding: 5px 0;
 }
 
-.menu {
+#menu .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   color: #777777;
 }
 
-li {
+#menu li {
   list-style: none;
   margin-right: 29px;
   text-transform: uppercase;
 }
 
-li:last-child {
+#menu li:last-child {
   margin-right: 0;
 }
 
-a {
+#menu li a {
   font-family: 'Lato', sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
@@ -31,15 +31,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  padding: 19px 0;
+#menu li a:hover {
+  padding: 14px 0;
   color: #ff9c00;
   border-top: 2px solid #ff9c00;
   border-bottom: 2px solid #ff9c00;
 }
 
-.menu li.active a {
-  padding: 19px 0;
+#menu .menu li.active a {
+  padding: 14px 0;
   color: #ff9c00;
   border-top: 2px solid #ff9c00;
   border-bottom: 2px solid #ff9c00;

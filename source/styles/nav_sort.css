@@ -2,11 +2,11 @@
   margin-top: 43px;
 }
 
-.nav-menu--sort {
+#menu_sort .nav-menu--sort {
   padding: 5px 0;
 }
 
-.menu--sort {
+#menu_sort .menu--sort {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,17 +14,17 @@
   color: #777777;
 }
 
-li {
+#menu_sort li {
   list-style: none;
   margin-right: 29px;
   text-transform: uppercase;
 }
 
-li:last-child {
+#menu_sort li:last-child {
   margin-right: 0;
 }
 
-a {
+#menu_sort a {
   font-family: 'Lato', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+#menu_sort a:hover {
   padding: 15px 0;
   color: #ff9c00;
   border-top: 2px solid #ff9c00;

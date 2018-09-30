@@ -1,6 +1,6 @@
 function Carousel(className, timeout, arrows, dotNav) {
     var sliderBlock = document.querySelector(className);
-    sliderBlock.querySelector('.item').classList.add('active');
+    sliderBlock.querySelector('.item').classList.add('is_active');
 
     // ------------------------------------
     // Adding attributes to slides items
@@ -27,7 +27,7 @@ function Carousel(className, timeout, arrows, dotNav) {
     //
     //     dots.innerHTML = repeatString(dot, slides.length);
     //     sliderBlock.appendChild(dots);
-    //     sliderBlock.querySelector('.slider__dots-item').classList.add('active');
+    //     sliderBlock.querySelector('.slider__dots-item').classList.add('is_active');
     //
     //     var dotsItem = sliderBlock.querySelectorAll('.slider__dots-item');
     //
@@ -44,8 +44,8 @@ function Carousel(className, timeout, arrows, dotNav) {
     // Handle slide change
     // ------------------------------------
     function handleSlideChange(action, e) {
-        var activeSlide = sliderBlock.querySelector('.item.active');
-        var activeDot = dotNav ? sliderBlock.querySelector('.slider__dots-item.active') : null;
+        var activeSlide = sliderBlock.querySelector('.item.is_active');
+        var activeDot = dotNav ? sliderBlock.querySelector('.slider__dots-item.is_active') : null;
         var activeID = activeSlide.dataset.id;
         var newID = 1;
 
@@ -63,10 +63,10 @@ function Carousel(className, timeout, arrows, dotNav) {
                 console.log('Sorry, no such type: ' + action + '.')
         }
 
-        activeSlide.classList.remove('active');
-        dotNav ? activeDot.classList.remove('active') : null;
-        sliderBlock.querySelector('.item-' + newID).classList.add('active');
-        dotNav ? sliderBlock.querySelector('.slider__dots-item-' + newID).classList.add('active') : null
+        activeSlide.classList.remove('is_active');
+        dotNav ? activeDot.classList.remove('is_active') : null;
+        sliderBlock.querySelector('.item-' + newID).classList.add('is_active');
+        dotNav ? sliderBlock.querySelector('.slider__dots-item-' + newID).classList.add('is_active') : null
     }
 
     // ------------------------------------

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 
 /* Basic Style */
 body {
@@ -37,4 +37,71 @@ body {
 /* Pages Style*/
 #home {
   background: #fafafa;
+}
+
+/*----- Style for hero section on pages -----*/
+.hero--description {
+  position: absolute;
+  right: 48%;
+  top: 0;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.hero__title {
+  background: #131313;
+  padding: 0 0 4px 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.hero__title_orange {
+  margin-left: 10px;
+  color: #ff9c00;
+}
+
+.hero__text{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #777777;
+}
+
+/*----- Style for button on pages -----*/
+.btn {
+  padding: 15px 30px;
+  width: 125px;
+  margin: auto;
+}
+
+.button--text {
+  text-transform: uppercase;
+}
+
+.button_orange {
+  color: #fff;
+  background: #ff9c00;
+}
+
+.button_orange:hover {
+  color: #ff9c00;
+  background: #131313;
+}
+
+.button_black {
+  color: #ff9c00;
+  background: #131313;
+}
+
+.button_black:hover {
+  color: #fff;
+  background: #ff9c00;
 }

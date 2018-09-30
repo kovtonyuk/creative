@@ -1,0 +1,6 @@
+#about .hero {
+    position: relative;
+    background: url(../images/about_hero.png) top right no-repeat #f0f0f2;
+    width: 100%;
+    height: 351px;
+}
