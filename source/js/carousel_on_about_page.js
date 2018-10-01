@@ -1,164 +1,134 @@
-//----------------------------
-// 3d Carousel image slider
-//----------------------------
-(function ( window ) {
-    'use strict';
+// ----------------------
+// Carousel on About page
+//-----------------------
+function Carousel2(className, timeout, arrows, dotNav) {
+    var sliderBlock = document.querySelector(className);
+    sliderBlock.querySelector('.item').classList.add('is_active');
 
-    /* Carousel constructor class */
-    var Carousel = function ( el, options ) {
-        var that = this;
+    // ------------------------------------
+    // Adding attributes to slides items
+    // ------------------------------------
+    var slides = sliderBlock.querySelectorAll('.item');
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.add('item-' + (1 + i));
+        slides[i].setAttribute('data-id', (1 + i))
+    }
 
-        this._settings = options || { };
+    // ------------------------------------
+    // Create dots block team
+    // ------------------------------------
+    if (dotNav) {
+        var dots = document.createElement('div');
+        dots.classList.add('slider__dots');
+        var dot = '<div class="slider__dots-item"></div>';
 
-        // options
-        this._settings.startingFace = this._settings.startingFace || 1;
-        this._settings.autoplay = this._settings.autoplay || false;
-        this._settings.slideshowInterval = this._settings.slideshowInterval || 50000;
-
-        this._element = document.getElementById( el );
-        this._dragArea = document.body;
-        this._navButtons = document.querySelectorAll( '.navigation-control' );
-        this._panelCount = this._element.children.length;
-        this._theta = 0;
-        this._currentFace = 0;
-        this._segmentSize = 360 / this._panelCount;
-        this._lastDragX = null;
-        this._autoplayTimeout = null;
-
-        var i = 0,
-            j = 0,
-            len = this._element.children.length,
-            buttonLen = this._navButtons.length;
-
-        for ( ; i < len; i++ ) {
-
-            this._element.children[ i ].style[ 'transform' ] =
-                'rotateY( ' + ( i * ( this._segmentSize ) ) + 'deg )' +
-                'translateZ( ' + this._getTranslateZ() + 'px )';
-        }
-
-        for ( ; j < buttonLen; j++ ) {
-            this._navButtons[ j ].addEventListener( 'click', function ( event ) {
-
-                var value = event.target.getAttribute( 'data-increment' );
-                that._rotateWheel( value );
-            }, false );
-        }
-
-        this._element.addEventListener( 'touchmove', function (e) {
-            e.preventDefault();
-            var currentX = e.touches[0].clientX;
-            var dragValue = currentX > that._lastDragX ? 1 : -1;
-
-            that._dragRotate( dragValue );
-            that._lastDragX = currentX;
-        });
-
-        this._element.addEventListener( 'touchend', function (e) {
-            that._theta = Math.round( that._theta / that._segmentSize ) * that._segmentSize;
-            that._rotateWheel( 0 );
-        });
-
-        this._rotateWheel( this._settings.startingFace );
-
-        if ( this._settings.autoplay ) {
-            this.play();
-        }
-    };
-
-    /* Returns translateZ value based on size and panel count */
-    Carousel.prototype._getTranslateZ = function () {
-        return Math.round( ( this._element.children[ 0 ].clientWidth / 2 ) / Math.tan( Math.PI / this._panelCount ) );
-    };
-
-    /* Returns number of front facing slide in gallery */
-    Carousel.prototype._getFaceNumber = function ( angle ) {
-        if ( angle > 360 || angle < -359) {
-            return this._getFaceNumber( ( Math.abs( angle ) ) - 360 );
-        } else {
-            if ( this._theta < 1 ) {
-                return Math.abs( this._panelCount / ( 360 / angle ) ) + 1;
-            } else {
-                return Math.abs( this._panelCount / ( 360 / angle ) );
+        function repeatString(string, times) {
+            if (times < 0) {
+                return ""
             }
-        }
-    };
-
-    /* Sets the correct opacity for face positions */
-    Carousel.prototype._checkOpacity = function () {
-        var face = Math.round( this._getFaceNumber( this._theta ) );
-
-        var position = this._theta > 0 ? ( this._panelCount + 1 ) - face : face;
-        var newPos = position === ( this._panelCount + 1 ) ? 1 : position;
-
-        // hide out of sight faces
-        var i = 0,
-            len = this._element.children.length;
-
-        for (; i < len; i++) {
-            this._element.children[ i ].style[ 'opacity' ] = 0.1;
-            this._element.children[ i ].className = 'background-panel';
+            if (times === 1) {
+                return string
+            }
+            return string + repeatString(string, times - 1)
         }
 
-        var main = this._element.children[ newPos - 1 ];
-        var leftSide = this._element.children[ newPos > this._panelCount - 1 ? 0 : newPos ];
-        var rightSide = this._element.children[ newPos - 2 < 0 ? this._panelCount - 1 : newPos - 2 ];
+        dots.innerHTML = repeatString(dot, slides.length);
+        sliderBlock.appendChild(dots);
+        sliderBlock.querySelector('.slider__dots-item').classList.add('current');
 
-        // change opacity for active panels
-        main.style[ 'opacity' ] = 1;
-        leftSide.style[ 'opacity' ] = 0.5;
-        rightSide.style[ 'opacity' ] = 0.5;
+        var dotsItem = sliderBlock.querySelectorAll('.slider__dots-item');
 
-        // add classes for custome styles
-        main.className = 'main-panel';
-        rightSide.className = 'right side-panel';
-        leftSide.className = 'left side-panel';
-    };
+        for (var i = 0; i < dotsItem.length; i++) {
+            dotsItem[i].classList.add('slider__dots-item-' + (1 + i));
+            dotsItem[i].setAttribute('data-id', (1 + i));
+            dotsItem[i].addEventListener('click', function (e) {
+                handleSlideChange('dot', e)
+            })
+        }
+    }
 
-    /* Rotate wheel by increment value */
-    /* Only use 1 or -1 */
-    Carousel.prototype._rotateWheel = function ( value ) {
-        var increment = parseInt(value);
+    // ------------------------------------
+    // Handle slide change
+    // ------------------------------------
+    function handleSlideChange(action, e) {
+        var activeSlide = sliderBlock.querySelector('.item.is_active');
+        var activeDot = dotNav ? sliderBlock.querySelector('.slider__dots-item.current') : null;
+        var activeID = activeSlide.dataset.id;
+        var newID = 1;
 
-        this._theta += ( 360 / this._panelCount ) * increment * -1;
+        switch (action) {
+            case 'next':
+                newID = (+activeID + 1) <= slides.length ? (+activeID + 1) : 1;
+                break;
+            case 'prev':
+                newID = (+activeID - 1) > 0 ? (+activeID - 1) : slides.length;
+                break;
+            case 'dot':
+                newID = e.target.dataset.id;
+                break;
+            default:
+                console.log('Sorry, no such type: ' + action + '.')
+        }
 
-        this._element.style[ 'transform' ] =
-            'translateZ(-' + this._getTranslateZ() + 'px)' +
-            'rotateY(' + this._theta + 'deg)';
+        activeSlide.classList.remove('is_active');
+        dotNav ? activeDot.classList.remove('current') : null;
+        sliderBlock.querySelector('.item-' + newID).classList.add('is_active');
+        dotNav ? sliderBlock.querySelector('.slider__dots-item-' + newID).classList.add('current') : null
+    }
 
-        this._checkOpacity();
-    };
+    // ------------------------------------
+    // Handle swipe events
+    // ------------------------------------
+    var touchstartX = 0;
+    var touchstartY = 0;
+    var touchendX = 0;
+    var touchendY = 0;
+    var gestureZone = sliderBlock;
 
-    /* Drag carousel */
-    Carousel.prototype._dragRotate = function ( distance ) {
-        this._theta += distance*10;
+    gestureZone.addEventListener('touchstart', function (event) {
+        touchstartX = event.changedTouches[0].screenX;
+        touchstartY = event.changedTouches[0].screenY
+    }, false);
 
-        this._element.style[ transforms[ 'webkitTransform' ] ] =
-            'translateZ(-' + this._getTranslateZ() + 'px)' +
-            'rotateY(' + this._theta + 'deg)';
-        this._element.style[ transforms[ 'MozTransform' ] ] =
-            'translateZ(-' + this._getTranslateZ() + 'px)' +
-            'rotateY(' + this._theta + 'deg)';
+    gestureZone.addEventListener('touchend', function (event) {
+        touchendX = event.changedTouches[0].screenX;
+        touchendY = event.changedTouches[0].screenY;
+        handleGesture()
+    }, false);
 
-        this._checkOpacity();
-    };
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            handleSlideChange('next')
+        }
+        if (touchendX > touchstartX) {
+            handleSlideChange('prev')
+        }
+        if (touchendY === touchstartY) {
+            clearInterval(sliderInterval)
+        }
+    }
 
-    /* Play Slide Show */
-    Carousel.prototype.play = function () {
-        var that = this;
-        clearInterval( this._autoplayTimeout );
-        this._autoplayTimeout = setInterval(function () {
-            that._rotateWheel( 1 );
-        }, this._settings.slideshowInterval);
-    };
+    // ------------------------------------
+    // Handle mouse events
+    // ------------------------------------
+    sliderBlock.addEventListener('mouseover', function () {
+        clearInterval(sliderInterval)
+    });
 
-    /* Stop Slide Show */
-    Carousel.prototype.stop = function () {
-        clearInterval( this._autoplayTimeout );
-    };
+    sliderBlock.addEventListener('mouseout', function () {
+        startSlider()
+    });
 
-    window.mgrCarousel = Carousel;
+    // ------------------------------------
+    // Start slides
+    // ------------------------------------
+    function startSlider() {
+        sliderInterval = setInterval(function () {
+            handleSlideChange('next')
+        }, timeout)
+    }
 
-}( window ));
+    startSlider()
+}
 
-var carousel = new mgrCarousel( 'carousel', { autoplay: true });
+var team__carousel = new Carousel2('.team_carousel', 500000, false, true);
