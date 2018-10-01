@@ -2,122 +2,117 @@
 
 /* Basic Style */
 body {
-  margin: 0;
-  color: #777777;
+    margin: 0;
+    color: #777777;
 }
 
 .container {
-  position: relative;
-  max-width: 912px;
-  margin: auto;
+    position: relative;
+    max-width: 912px;
+    margin: auto;
 }
 
 /* Title on pages */
 .title__uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .section__title {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 47px 0 32px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 47px 0 32px;
 }
 
 .section__description {
-  font-family: 'Lato', sans-serif;
-  font-size: .8rem;
-  font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
 }
 
 .section__description--accent {
-  color: #ff9c00;
+    color: #ff9c00;
 }
 
 /* Pages Style*/
 #home {
-  background: #fafafa;
+    background: #fafafa;
 }
 
 #about {
-  background: #131313;
-  border-bottom: 5px solid #ff9c00;
+    background: #131313;
+    border-bottom: 5px solid #ff9c00;
 }
 
 /*----- Style for hero section on pages -----*/
 .hero--description {
-  position: absolute;
-  right: 48%;
-  top: 0;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
+    position: absolute;
+    right: 48%;
+    top: 0;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
 }
 
 .hero__title {
-  background: #131313;
-  padding: 0 0 4px 24px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 2.5rem;
-  margin-bottom: 24px;
+    background: #131313;
+    padding: 0 0 4px 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
 }
 
 .hero__title_orange {
-  margin-left: 10px;
-  color: #ff9c00;
+    margin-left: 10px;
+    color: #ff9c00;
 }
 
-.hero__text{
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
-  text-transform: uppercase;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  color: #777777;
+.hero__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #777777;
 }
 
 /*----- Style for button on pages -----*/
 .btn {
-  padding: 15px 30px;
-  width: 125px;
-  margin: auto;
+    padding: 15px 30px;
+    width: 125px;
+    margin: auto;
 }
 
 .button--text {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .button_orange {
-  color: #fff;
-  background: #ff9c00;
+    color: #fff;
+    background: #ff9c00;
 }
 
 .button_orange:hover {
-  color: #ff9c00;
-  background: #131313;
+    color: #ff9c00;
+    background: #131313;
 }
 
 .button_black {
-  color: #ff9c00;
-  background: #131313;
+    color: #ff9c00;
+    background: #131313;
 }
 
 .button_black:hover {
-  color: #fff;
-  background: #ff9c00;
+    color: #fff;
+    background: #ff9c00;
 }
 
-/*----- Style for navigation on pages -----*/
-li {
-  list-style: none;
-  margin-right: 29px;
-  text-transform: uppercase;
-}
-
-li:last-child {
-  margin-right: 0;
+/*----- Active class for carousel*/
+.is_active {
+    display: block;
+    left: 0;
 }

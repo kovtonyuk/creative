@@ -1,3 +1,6 @@
+// ----------------------
+// Carousel on Home page
+//-----------------------
 function Carousel(className, timeout, arrows, dotNav) {
     var sliderBlock = document.querySelector(className);
     sliderBlock.querySelector('.item').classList.add('is_active');
@@ -12,35 +15,6 @@ function Carousel(className, timeout, arrows, dotNav) {
     }
 
     // ------------------------------------
-    // Create dots block about
-    // ------------------------------------
-    if (dotNav) {
-        var dots = document.createElement('div');
-        dots.classList.add('slider__dots');
-        var dot = '<div class="slider__dots-item"></div>';
-
-        function repeatString(string, times) {
-            if(times < 0) { return "" }
-            if(times === 1) { return string }
-            return string + repeatString(string, times - 1)
-        }
-
-        dots.innerHTML = repeatString(dot, slides.length);
-        sliderBlock.appendChild(dots);
-        sliderBlock.querySelector('.slider__dots-item').classList.add('is_active');
-
-        var dotsItem = sliderBlock.querySelectorAll('.slider__dots-item');
-
-        for (var i = 0; i < dotsItem.length; i++) {
-            dotsItem[i].classList.add('slider__dots-item-' + (1 + i));
-            dotsItem[i].setAttribute('data-id', (1 + i));
-            dotsItem[i].addEventListener('click', function(e) {
-                handleSlideChange('dot', e)
-            })
-        }
-    }
-
-    // ------------------------------------
     // Handle slide change
     // ------------------------------------
     function handleSlideChange(action, e) {
@@ -49,7 +23,7 @@ function Carousel(className, timeout, arrows, dotNav) {
         var activeID = activeSlide.dataset.id;
         var newID = 1;
 
-        switch(action) {
+        switch (action) {
             case 'next':
                 newID = (+activeID + 1) <= slides.length ? (+activeID + 1) : 1;
                 break;
@@ -75,15 +49,15 @@ function Carousel(className, timeout, arrows, dotNav) {
     if (arrows) {
         var nav = document.createElement('div');
         nav.classList.add('controls');
-        nav.innerHTML = '<div class="slider__prev left carousel-control"><i class="fas fa-angle-left"></i></div><div ' +
-            'class="slider__next right carousel-control"><i class="fas fa-angle-right"></i></div>';
+        nav.innerHTML = '<div class="slider__prev left carousel-control"><i class="fa fa-angle-left"></i></div><div ' +
+            'class="slider__next right carousel-control"><i class="fa fa-angle-right"></i></div>';
         sliderBlock.appendChild(nav);
 
-        sliderBlock.querySelector('.slider__next').addEventListener('click', function() {
+        sliderBlock.querySelector('.slider__next').addEventListener('click', function () {
             handleSlideChange('next')
-        });
+        })
 
-        sliderBlock.querySelector('.slider__prev').addEventListener('click', function() {
+        sliderBlock.querySelector('.slider__prev').addEventListener('click', function () {
             handleSlideChange('prev')
         })
     }
@@ -97,31 +71,37 @@ function Carousel(className, timeout, arrows, dotNav) {
     var touchendY = 0;
     var gestureZone = sliderBlock;
 
-    gestureZone.addEventListener('touchstart', function(event) {
+    gestureZone.addEventListener('touchstart', function (event) {
         touchstartX = event.changedTouches[0].screenX;
         touchstartY = event.changedTouches[0].screenY
     }, false);
 
-    gestureZone.addEventListener('touchend', function(event) {
+    gestureZone.addEventListener('touchend', function (event) {
         touchendX = event.changedTouches[0].screenX;
         touchendY = event.changedTouches[0].screenY;
         handleGesture()
     }, false);
 
     function handleGesture() {
-        if (touchendX < touchstartX) { handleSlideChange('next') }
-        if (touchendX > touchstartX) { handleSlideChange('prev') }
-        if (touchendY === touchstartY) { clearInterval(sliderInterval) }
+        if (touchendX < touchstartX) {
+            handleSlideChange('next')
+        }
+        if (touchendX > touchstartX) {
+            handleSlideChange('prev')
+        }
+        if (touchendY === touchstartY) {
+            clearInterval(sliderInterval)
+        }
     }
 
     // ------------------------------------
     // Handle mouse events
     // ------------------------------------
-    sliderBlock.addEventListener('mouseover', function() {
+    sliderBlock.addEventListener('mouseover', function () {
         clearInterval(sliderInterval)
     });
 
-    sliderBlock.addEventListener('mouseout', function() {
+    sliderBlock.addEventListener('mouseout', function () {
         startSlider()
     });
 
@@ -129,7 +109,7 @@ function Carousel(className, timeout, arrows, dotNav) {
     // Start slides
     // ------------------------------------
     function startSlider() {
-        sliderInterval = setInterval(function() {
+        sliderInterval = setInterval(function () {
             handleSlideChange('next')
         }, timeout)
     }
@@ -137,5 +117,4 @@ function Carousel(className, timeout, arrows, dotNav) {
     startSlider()
 }
 
-var hero__carousel = new Carousel('.hero_carousel', 50000, true, false);
-var team__carousel = new Carousel('.team__carousel', 50000, true, true);
+var hero__carousel = new Carousel('.hero_carousel', 5000, true);

@@ -1,0 +1,122 @@
+/*----- Style for navigation on pages -----*/
+li {
+    list-style: none;
+    margin-right: 29px;
+    text-transform: uppercase;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+/*----- Main menu navigation style*/
+#menu {
+    width: 70%;
+}
+
+#menu .nav-menu {
+    padding: 5px 0;
+}
+
+#menu .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: #777777;
+}
+
+#menu li a {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    padding: 14px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+}
+
+#menu .menu li.active a {
+    padding: 14px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+}
+
+/*----- Sort menu from portfolio navigation style*/
+#menu_sort {
+    margin-top: 43px;
+}
+
+#menu_sort .nav-menu--sort {
+    padding: 5px 0;
+}
+
+#menu_sort .menu--sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    color: #777777;
+}
+
+#menu_sort a {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+}
+
+#menu_sort a:hover {
+    padding: 15px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+}
+
+/*----- Social menu from footer navigation style*/
+#menu__social {
+    margin: 6px 0 30px;
+}
+
+#menu__social .nav-menu--social {
+    padding: 5px 0;
+}
+
+#menu__social .menu--social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    color: #777777;
+}
+
+#menu__social li {
+    list-style: none;
+    width: 63px;
+    text-transform: uppercase;
+}
+
+#menu__social li:last-child {
+    margin-right: 0;
+}
+
+#menu__social a {
+    font-family: 'Lato', sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+}
+
+#menu__social a:hover {
+    padding: 15px 20px;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+}

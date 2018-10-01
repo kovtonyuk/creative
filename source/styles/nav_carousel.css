@@ -1,51 +1,51 @@
-/*------------ Carousel indicators hero section ------------*/
-#hero__carousel .slider__dots {
-  position: relative;
-  bottom: -35px;
-  left: 0;
-  z-index: 15;
-  width: 100%;
-  max-width: 370px;
-  margin-left: 0;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-  float: left;
+/*------------ Carousel indicators teamwork section ------------*/
+#team_carousel .slider__dots {
+    position: relative;
+    bottom: -35px;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    max-width: 370px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    float: left;
 }
 
 .slider__dots-item {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px 3px;
-  text-indent: -999px;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #d0d0d0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    text-indent: -999px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #d0d0d0;
 }
 
 /*------------ Carousel hero control ------------*/
 .controls {
-  position: absolute;
-  top: -40px;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size: 2.375rem;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.375rem;
 }
 
 .carousel-control {
-  display: inline-block;
-  width: 100%;
-  margin-right: 6%;
-  margin-left: 9%;
-  vertical-align: bottom;
+    display: inline-block;
+    width: 100%;
+    margin-right: 6%;
+    margin-left: 9%;
+    vertical-align: bottom;
 }
 
 .right {
-  text-align: right;
+    text-align: right;
 }
 
 .fa-angle-right:hover,

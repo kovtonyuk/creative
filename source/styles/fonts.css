@@ -1,39 +1,39 @@
 @font-face {
-  font-family: Lato-Bold;
-  src: url("/source/fonts/Lato-Bold.woff") format("woff");
-  src: url("/source/fonts/Lato-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
+    font-family: Lato-Bold;
+    src: url("/source/fonts/Lato-Bold.woff") format("woff");
+    src: url("/source/fonts/Lato-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Lato-Regular;
-  src: url("/source/fonts/Lato-Regular.woff") format("woff");
-  src: url("/source/fonts/Lato-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: Lato-Regular;
+    src: url("/source/fonts/Lato-Regular.woff") format("woff");
+    src: url("/source/fonts/Lato-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Lato-Light;
-  src: url("/source/fonts/Lato-Light.woff") format("woff");
-  src: url("/source/fonts/Lato-Light.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: Lato-Light;
+    src: url("/source/fonts/Lato-Light.woff") format("woff");
+    src: url("/source/fonts/Lato-Light.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Lato-Medium;
-  src: url("/source/fonts/latomedium.woff") format("woff");
-  src: url("/source/fonts/latomedium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: Lato-Medium;
+    src: url("/source/fonts/latomedium.woff") format("woff");
+    src: url("/source/fonts/latomedium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: Lato-Thin;
-  src: url("/source/fonts/latothin.woff") format("woff");
-  src: url("/source/fonts/latothin.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+    font-family: Lato-Thin;
+    src: url("/source/fonts/latothin.woff") format("woff");
+    src: url("/source/fonts/latothin.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }

@@ -1,83 +1,78 @@
 .hero_carousel {
-  position: relative;
+    position: relative;
 }
 
 .carousel-inner {
-  position: relative;
+    position: relative;
 }
 
 .item {
-  display: none;
-  position: relative;
-  transition: .6s ease-in-out left;
+    display: none;
+    position: relative;
+    transition: .6s ease-in-out left;
 }
 
 img {
-  width: 100%;
-  height: auto;
-}
-
-.is_active {
-  display: block;
-  left: 0;
+    width: 100%;
+    height: auto;
 }
 
 /* Text */
 .slider--description {
-  position: absolute;
-  right: 41%;
-  top: 21%;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  color: #fff;
+    position: absolute;
+    right: 41%;
+    top: 21%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 .slider--description__two {
-  position: absolute;
-  right: 15%;
-  top: 21%;
-  left: 41%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  color: #fff;
+    position: absolute;
+    right: 15%;
+    top: 21%;
+    left: 41%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 .slide__title {
-  background: #131313;
-  padding: 0 0 4px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 2.65rem;
-  margin-bottom: 20px;
+    background: #131313;
+    padding: 0 0 4px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 2.65rem;
+    margin-bottom: 20px;
 }
 
 .slide__title_orange {
-  margin-left: 10px;
-  color: #ff9c00;
+    margin-left: 10px;
+    color: #ff9c00;
 }
 
-.slider__text{
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: .75rem;
-  text-transform: uppercase;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  color: #777777;
+.slider__text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: .75rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #777777;
 }
 
 .slider__btn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
-#hero__carousel .button_orange {
-  margin-right: 30px;
+#hero_carousel .button_orange {
+    margin-right: 30px;
 }

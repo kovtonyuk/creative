@@ -1,72 +1,61 @@
-.team_carousel {
-    position: relative;
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.carousel-inner {
-    position: relative;
+#carousel {
+    width: 50%;
+    height: 80%; display: block;
+    left: 25%; bottom: 10%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-out;
 }
-
-.item {
-    display: none;
-    position: relative;
-    transition: .6s ease-in-out left;
-}
-
-img {
+#carousel figure {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: opacity 1.5s, background-color 0.1s;
+}
+#carousel figure img {
+    width: 90%;
+    margin: 5%;
     height: auto;
+    -webkit-box-shadow: 0 27px 62px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 27px 62px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 27px 62px 0 rgba(0,0,0,0.5);
+    border-radius: 0.2em;
 }
 
-.is_active {
-    display: block;
-    left: 0;
-}
 
-/* Text */
-.slider--description {
-    position: absolute;
-    right: 41%;
-    top: 21%;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.little-text-block {
+    width: 80%;
+    background-color: rgb(87,123,234);
+    margin: 0 auto;
+    bottom: 30%;
+    left: 10%;
+    padding: 1em;
     text-align: center;
-    color: #fff;
-}
-
-.slider--description__two {
+    font-weight: bold;
     position: absolute;
-    right: 15%;
-    top: 21%;
-    left: 41%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    color: #fff;
+}
+/*
+#carousel figure.main-panel {
+  background-color: blue;
+}
+#carousel figure.background-panel {
+  background-color: red;
+}
+#carousel figure.side-panel {
+  background-color: green;
 }
 
-.slide__title {
-    background: #131313;
-    padding: 0 0 4px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    font-size: 2.65rem;
-    margin-bottom: 20px;
-}
+#carousel figure.background-panel, #carousel figure.side-panel { opacity: 0 !important; }
+#carousel figure.background-panel { opacity: 0 !important; } */
 
-.slide__title_orange {
-    margin-left: 10px;
-    color: #ff9c00;
-}
-
-.slider__text{
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: .75rem;
-    text-transform: uppercase;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: #777777;
+h3 {
+    padding: 1em;
+    background-color: #3c3c3c;
 }

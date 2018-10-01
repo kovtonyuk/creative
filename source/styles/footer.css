@@ -1,29 +1,29 @@
 footer {
-  background: #262626;
-  width: 100%;
-  border-top: 4px solid #ff9c00;
-  padding-bottom: 30px;
+    background: #262626;
+    width: 100%;
+    border-top: 4px solid #ff9c00;
+    padding-bottom: 30px;
 }
 
 .footer {
-  text-align: center;
+    text-align: center;
 }
 
 .footer--logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #footer .logo {
-  width: 13%;
-  margin: 17px auto;
+    width: 13%;
+    margin: 17px auto;
 }
 
 .copyright--text {
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: .75rem;
-  letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: .75rem;
+    letter-spacing: 1px;
 }
 
