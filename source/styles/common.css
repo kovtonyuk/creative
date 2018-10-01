@@ -41,6 +41,7 @@ body {
 
 #about {
   background: #131313;
+  border-bottom: 5px solid #ff9c00;
 }
 
 /*----- Style for hero section on pages -----*/

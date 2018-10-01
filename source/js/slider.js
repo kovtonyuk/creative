@@ -14,31 +14,31 @@ function Carousel(className, timeout, arrows, dotNav) {
     // ------------------------------------
     // Create dots block about
     // ------------------------------------
-    // if (dotNav) {
-    //     var dots = document.createElement('div');
-    //     dots.classList.add('slider__dots');
-    //     var dot = '<div class="slider__dots-item"></div>';
-    //
-    //     function repeatString(string, times) {
-    //         if(times < 0) { return "" }
-    //         if(times === 1) { return string }
-    //         return string + repeatString(string, times - 1)
-    //     }
-    //
-    //     dots.innerHTML = repeatString(dot, slides.length);
-    //     sliderBlock.appendChild(dots);
-    //     sliderBlock.querySelector('.slider__dots-item').classList.add('is_active');
-    //
-    //     var dotsItem = sliderBlock.querySelectorAll('.slider__dots-item');
-    //
-    //     for (var i = 0; i < dotsItem.length; i++) {
-    //         dotsItem[i].classList.add('slider__dots-item-' + (1 + i));
-    //         dotsItem[i].setAttribute('data-id', (1 + i));
-    //         dotsItem[i].addEventListener('click', function(e) {
-    //             handleSlideChange('dot', e)
-    //         })
-    //     }
-    // }
+    if (dotNav) {
+        var dots = document.createElement('div');
+        dots.classList.add('slider__dots');
+        var dot = '<div class="slider__dots-item"></div>';
+
+        function repeatString(string, times) {
+            if(times < 0) { return "" }
+            if(times === 1) { return string }
+            return string + repeatString(string, times - 1)
+        }
+
+        dots.innerHTML = repeatString(dot, slides.length);
+        sliderBlock.appendChild(dots);
+        sliderBlock.querySelector('.slider__dots-item').classList.add('is_active');
+
+        var dotsItem = sliderBlock.querySelectorAll('.slider__dots-item');
+
+        for (var i = 0; i < dotsItem.length; i++) {
+            dotsItem[i].classList.add('slider__dots-item-' + (1 + i));
+            dotsItem[i].setAttribute('data-id', (1 + i));
+            dotsItem[i].addEventListener('click', function(e) {
+                handleSlideChange('dot', e)
+            })
+        }
+    }
 
     // ------------------------------------
     // Handle slide change
@@ -138,3 +138,4 @@ function Carousel(className, timeout, arrows, dotNav) {
 }
 
 var hero__carousel = new Carousel('.hero_carousel', 50000, true, false);
+var team__carousel = new Carousel('.team__carousel', 50000, true, true);
