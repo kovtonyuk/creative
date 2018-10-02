@@ -132,4 +132,4 @@ function Carousel(className, timeout, arrows, dotNav) {
 }
 
 var team__carousel = new Carousel('.team_carousel', 5000, false, true);
-var about__carousel = new Carousel('.about_carousel', 5000, false, true);
+var about__carousel = new Carousel('.about_carousel', 500000, false, true);

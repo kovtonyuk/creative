@@ -1,3 +1,4 @@
+/*----- Common style -----*/
 #about .hero {
     position: relative;
     background: url(../images/about_hero.png) center right no-repeat #f0f0f2;
@@ -12,6 +13,65 @@
     text-align: center;
 }
 
+/*----- Style for about section -----*/
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
+.about_carousel {
+    position: relative;
+}
+
+.about__list {
+    position: relative;
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#about__carousel .item {
+    position: relative;
+    transition: .6s ease-in-out left;
+}
+
+.about__img {
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.about__item--text {
+    margin: 28px auto 0 105px;
+}
+
+.about__header {
+    margin: 0;
+    font-size: 1.375rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+.about__description {
+    margin-top: -9px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 44px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+
+}
+
+
+/*----- Style for services section -----*/
 .services_section {
     padding-bottom: 15px;
 }
@@ -31,6 +91,108 @@
     padding: 0 15px;
 }
 
+.figure {
+    width: 60px;
+    background: #fff;
+    height: 36px;
+    position: relative;
+    transform: rotate(90deg);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.figure:hover {
+    background: #ff9c00;
+}
+
+.figure:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 18px solid #fff;
+}
+
+.figure:hover:before {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 18px solid #ff9c00;
+}
+
+.figure:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 18px solid #fff;
+}
+
+.figure:hover:after {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 18px solid #ff9c00;
+}
+
+.figure .development--icon {
+    background: url(../images/code.png) no-repeat center;
+    background-size: contain;
+    transform: rotate(-90deg);
+    display: block;
+    height: 100%;
+    z-index: 3;
+}
+
+.figure .development--icon:hover {
+    background-image: url(../images/code_hover.png);
+}
+
+.figure .html--icon {
+    background: url(../images/html.png) no-repeat center;
+    background-size: contain;
+    transform: rotate(-90deg);
+    display: block;
+    height: 100%;
+    z-index: 3;
+}
+
+.figure .html--icon:hover {
+    background-image: url(../images/html_hover.png);
+}
+
+.figure .mobile--icon {
+    background: url(../images/mobile.png) no-repeat center;
+    background-size: contain;
+    transform: rotate(-90deg);
+    display: block;
+    height: 100%;
+    z-index: 3;
+}
+
+.figure .mobile--icon:hover {
+    background-image: url(../images/mobile_hover.png);
+}
+
+.figure .ui--icon {
+    background: url(../images/pencil.png) no-repeat center;
+    background-size: contain;
+    transform: rotate(-90deg);
+    display: block;
+    height: 100%;
+    z-index: 3;
+}
+
+.figure .ui--icon:hover {
+    background-image: url(../images/pencil_hover.png);
+}
+
 .service__header {
     color: #fff;
     font-family: 'Lato', sans-serif;
@@ -46,104 +208,4 @@
     font-size: .8rem;
 }
 
-#hexagon {
-    width: 60px;
-    background: #fff;
-    height: 36px;
-    position: relative;
-    transform: rotate(90deg);
-    margin: 0 auto;
-    cursor: pointer;
-}
-
-#hexagon:hover {
-    background: #ff9c00;
-}
-
-#hexagon:before {
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: -18px;
-    left: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 18px solid #fff;
-}
-
-#hexagon:hover:before {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 18px solid #ff9c00;
-}
-
-#hexagon:after {
-    content: '';
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 18px solid #fff;
-}
-
-#hexagon:hover:after {
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 18px solid #ff9c00;
-}
-
-#hexagon .development--icon {
-    background: url(../images/code.png) no-repeat center;
-    background-size: contain;
-    transform: rotate(-90deg);
-    display: block;
-    height: 100%;
-    z-index: 3;
-}
-
-#hexagon .development--icon:hover {
-    background-image: url(../images/code_hover.png);
-}
-
-#hexagon .html--icon {
-    background: url(../images/html.png) no-repeat center;
-    background-size: contain;
-    transform: rotate(-90deg);
-    display: block;
-    height: 100%;
-    z-index: 3;
-}
-
-#hexagon .html--icon:hover {
-    background-image: url(../images/html_hover.png);
-}
-
-#hexagon .mobile--icon {
-    background: url(../images/mobile.png) no-repeat center;
-    background-size: contain;
-    transform: rotate(-90deg);
-    display: block;
-    height: 100%;
-    z-index: 3;
-}
-
-#hexagon .mobile--icon:hover {
-    background-image: url(../images/mobile_hover.png);
-}
-
-#hexagon .ui--icon {
-    background: url(../images/pencil.png) no-repeat center;
-    background-size: contain;
-    transform: rotate(-90deg);
-    display: block;
-    height: 100%;
-    z-index: 3;
-}
-
-#hexagon .ui--icon:hover {
-    background-image: url(../images/pencil_hover.png);
-}
+/*----- Style for teamwork section -----*/
