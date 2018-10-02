@@ -112,7 +112,8 @@ body {
 }
 
 /*----- Active class for carousel*/
-.is_active {
+.is_active,
+.now {
     display: block;
     left: 0;
 }

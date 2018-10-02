@@ -1,7 +1,7 @@
 // ----------------------
 // Carousel on About page
 //-----------------------
-function Carousel2(className, timeout, arrows, dotNav) {
+function Carousel(className, timeout, arrows, dotNav) {
     var sliderBlock = document.querySelector(className);
     sliderBlock.querySelector('.item').classList.add('is_active');
 
@@ -131,4 +131,5 @@ function Carousel2(className, timeout, arrows, dotNav) {
     startSlider()
 }
 
-var team__carousel = new Carousel2('.team_carousel', 500000, false, true);
+var team__carousel = new Carousel('.team_carousel', 5000, false, true);
+var about__carousel = new Carousel('.about_carousel', 5000, false, true);
