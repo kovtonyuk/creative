@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.carousel-inner {
+#hero__carousel .carousel-inner {
     position: relative;
 }
 
@@ -12,7 +12,7 @@
     transition: .6s ease-in-out left;
 }
 
-img {
+#hero__carousel .item img {
     width: 100%;
     height: auto;
 }
