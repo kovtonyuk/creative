@@ -22,29 +22,14 @@
 }
 
 .about_carousel {
-    position: relative;
-}
-
-.about__list {
-    position: relative;
-}
-
-.carousel-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-#about__carousel .item {
-    position: relative;
-    transition: .6s ease-in-out left;
-}
-
-.about__img {
-    background: #fff;
-    position: relative;
     margin: 0 auto;
-    cursor: pointer;
-    border: 2px solid #fff;
+    width:800px;
+    height: 300px;
+    display: relative;
+}
+.about_carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
 }
 
 .about__item--text {
