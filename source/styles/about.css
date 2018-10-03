@@ -25,10 +25,10 @@
     margin: 0 auto;
     width:800px;
     height: 300px;
-    display: relative;
+    position: relative;
 }
 .about_carousel img {
-    display: hidden; /* hide images until carousel prepares them */
+    display: none; /* hide images until carousel prepares them */
     cursor: pointer; /* not needed if you wrap carousel items in links */
 }
 
