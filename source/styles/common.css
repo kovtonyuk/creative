@@ -46,10 +46,6 @@ body {
 
 /*----- Style for hero section on pages -----*/
 .hero--description {
-    position: absolute;
-    right: 48%;
-    top: 0;
-    left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -57,6 +53,7 @@ body {
 }
 
 .hero__title {
+    width: 350px;
     background: #131313;
     padding: 0 0 4px 24px;
     font-family: 'Lato', sans-serif;

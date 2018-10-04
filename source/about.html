@@ -44,11 +44,13 @@
 
     <!-- Hero section -->
     <div class="hero" id="hero">
-        <div class="hero--description">
-            <h5 class="hero__title">about<span class="hero__title_orange">the agency</span></h5>
-            <p class="hero__text title__uppercase">
-                welcome to creative
-            </p>
+        <div class="container">
+            <div class="hero--description">
+                <h5 class="hero__title">about<span class="hero__title_orange">the agency</span></h5>
+                <p class="hero__text title__uppercase">
+                    welcome to creative
+                </p>
+            </div>
         </div>
     </div>
 
@@ -79,110 +81,231 @@
                 <!--Static text-->
                 <div class="about__item--text">
                     <!-- Accordion -->
-                    <div id="accordion" class="accordion-container">
-                        <div class="content-entry">
-                            <h4 class="article-title"><i></i>Who is creative ?</h4>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
-                                    eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
-                                    Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <div class="content-entry">
+                                <h4 class="article-title"><i></i>Who is creative ?</h4>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
+                                        eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+                                        Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                                </div>
+                                <!--/.accordion-content-->
                             </div>
-                            <!--/.accordion-content-->
                         </div>
-
-                        <div class="content-entry">
-                            <h4 class="article-title"><i></i>Experiences</h4>
-                            <div class="accordion-content">
-
-                                <ul class="skills-bar-container">
-
-                                    <li>
-                                        <div class="progressbar-title">
-                                            <h3>UI/UX Design</h3>
-                                            <span class="percent" id="ui-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progressred" id="progress-ui"></span>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="progressbar-title">
-                                            <h3>HTML/CSS</h3>
-                                            <span class="percent" id="html-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progressblue" id="progress-html"></span>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="progressbar-title">
-                                            <h3>JavaScript/jQuery</h3>
-                                            <span class="percent" id="javascript-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progresspurple" id="progress-javascript"></span>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="progressbar-title">
-                                            <h3>PHP</h3>
-                                            <span class="percent" id="php-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progressorange" id="progress-php"></span>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="progressbar-title">
-                                            <h3>Web Design</h3>
-                                            <span class="percent" id="web_design-pourcent"></span>
-                                        </div>
-                                        <div class="bar-container">
-                                            <span class="progressbar progressgreen" id="progress-web_design"></span>
-                                        </div>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-                            <!--/.accordion-content-->
-                        </div>
-
-                        <div class="content-entry">
-                            <h4 class="article-title"><i></i>Learn more</h4>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
-                                    eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
-                                    Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
-                            </div>
-                            <!--/.accordion-content-->
-                        </div>
-
-                        <div class="content-entry">
-                            <h4 class="article-title"><i></i>Learn more</h4>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
-                                    eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
-                                    Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
-                            </div>
-                            <!--/.accordion-content-->
-                        </div>
-
-                        <div class="content-entry">
-                            <h4 class="article-title"><i></i>Learn more</h4>
-                            <div class="accordion-content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
-                                    eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
-                                    Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
-                            </div>
-                            <!--/.accordion-content-->
-                        </div>
-
                     </div>
+
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <div class="content-entry">
+                                <h4 class="article-title"><i></i>Experiences</h4>
+                                <div class="accordion-content">
+
+                                    <ul class="skills-bar-container">
+
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>UI/UX Design</h3>
+                                                <span class="percent" id="ui-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressred" id="progress-ui"></span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>HTML/CSS</h3>
+                                                <span class="percent" id="html-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressblue" id="progress-html"></span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>JavaScript/jQuery</h3>
+                                                <span class="percent" id="javascript-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progresspurple" id="progress-javascript"></span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>PHP</h3>
+                                                <span class="percent" id="php-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressorange" id="progress-php"></span>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="progressbar-title">
+                                                <h3>Web Design</h3>
+                                                <span class="percent" id="web_design-pourcent"></span>
+                                            </div>
+                                            <div class="bar-container">
+                                                <span class="progressbar progressgreen" id="progress-web_design"></span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <!--/.accordion-content-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <div class="content-entry">
+                                <h4 class="article-title"><i></i>Lorem ipsum</h4>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
+                                        eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+                                        Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                                </div>
+                                <!--/.accordion-content-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <div class="content-entry">
+                                <h4 class="article-title"><i></i>Lorem ipsum</h4>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
+                                        eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+                                        Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                                </div>
+                                <!--/.accordion-content-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <div class="content-entry">
+                                <h4 class="article-title"><i></i>Lorem ipsum</h4>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus
+                                        eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.
+                                        Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>
+                                </div>
+                                <!--/.accordion-content-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div id="accordion" class="accordion-container">-->
+                        <!--<div class="content-entry">-->
+                            <!--<h4 class="article-title"><i></i>Who is creative ?</h4>-->
+                            <!--<div class="accordion-content">-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus-->
+                                    <!--eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.-->
+                                    <!--Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;/.accordion-content&ndash;&gt;-->
+                        <!--</div>-->
+
+                        <!--<div class="content-entry">-->
+                            <!--<h4 class="article-title"><i></i>Experiences</h4>-->
+                            <!--<div class="accordion-content">-->
+
+                                <!--<ul class="skills-bar-container">-->
+
+                                    <!--<li>-->
+                                        <!--<div class="progressbar-title">-->
+                                            <!--<h3>UI/UX Design</h3>-->
+                                            <!--<span class="percent" id="ui-pourcent"></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="bar-container">-->
+                                            <!--<span class="progressbar progressred" id="progress-ui"></span>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                    <!--<li>-->
+                                        <!--<div class="progressbar-title">-->
+                                            <!--<h3>HTML/CSS</h3>-->
+                                            <!--<span class="percent" id="html-pourcent"></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="bar-container">-->
+                                            <!--<span class="progressbar progressblue" id="progress-html"></span>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                    <!--<li>-->
+                                        <!--<div class="progressbar-title">-->
+                                            <!--<h3>JavaScript/jQuery</h3>-->
+                                            <!--<span class="percent" id="javascript-pourcent"></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="bar-container">-->
+                                            <!--<span class="progressbar progresspurple" id="progress-javascript"></span>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                    <!--<li>-->
+                                        <!--<div class="progressbar-title">-->
+                                            <!--<h3>PHP</h3>-->
+                                            <!--<span class="percent" id="php-pourcent"></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="bar-container">-->
+                                            <!--<span class="progressbar progressorange" id="progress-php"></span>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                    <!--<li>-->
+                                        <!--<div class="progressbar-title">-->
+                                            <!--<h3>Web Design</h3>-->
+                                            <!--<span class="percent" id="web_design-pourcent"></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="bar-container">-->
+                                            <!--<span class="progressbar progressgreen" id="progress-web_design"></span>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                <!--</ul>-->
+
+                            <!--</div>-->
+                            <!--&lt;!&ndash;/.accordion-content&ndash;&gt;-->
+                        <!--</div>-->
+
+                        <!--<div class="content-entry">-->
+                            <!--<h4 class="article-title"><i></i>Learn more</h4>-->
+                            <!--<div class="accordion-content">-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus-->
+                                    <!--eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.-->
+                                    <!--Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;/.accordion-content&ndash;&gt;-->
+                        <!--</div>-->
+
+                        <!--<div class="content-entry">-->
+                            <!--<h4 class="article-title"><i></i>Learn more</h4>-->
+                            <!--<div class="accordion-content">-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus-->
+                                    <!--eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.-->
+                                    <!--Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;/.accordion-content&ndash;&gt;-->
+                        <!--</div>-->
+
+                        <!--<div class="content-entry">-->
+                            <!--<h4 class="article-title"><i></i>Learn more</h4>-->
+                            <!--<div class="accordion-content">-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo. Phasellus-->
+                                    <!--eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus odio Fusce sed enim erat.-->
+                                    <!--Mauris dictum lorem eu tortor porta placerat. Suspendisse ac vestibulum eros.</p>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;/.accordion-content&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                 </div>
             </div>

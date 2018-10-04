@@ -198,20 +198,20 @@
 .progressgreen {
     background-color: #27ae60;
 }
-@keyframes progress-html {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 95%;
-    }
-}
 @keyframes progress-ui {
     0% {
         width: 0%;
     }
     100% {
         width: 90%;
+    }
+}
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
     }
 }
 @keyframes progress-javascript {
@@ -238,6 +238,7 @@
         width: 85%;
     }
 }
+
 
 /*----- Style for services section -----*/
 .services_section {
