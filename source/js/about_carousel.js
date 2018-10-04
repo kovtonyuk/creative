@@ -524,32 +524,32 @@
          * The user may choose to wrap the images is link tags. If they do this, we need to
          * make sure that they aren't active for certain situations
          */
-        $(this).find('a').bind("click", function (event) {
-            var isCenter = $(this).find('img').data('currentPosition') == 0;
-            // should we disable the links?
-            if (options.linkHandling === 1 || // turn off all links
-                (options.linkHandling === 2 && !isCenter)) // turn off all links except center
-            {
-                event.preventDefault();
-                return false;
-            }
-        });
-
-        function nextItemFromCenter() {
-            var $next = data.currentCenterItem.next();
-            if ($next.length <= 0) {
-                $next = data.currentCenterItem.parent().children().first();
-            }
-            return $next;
-        }
-
-        function prevItemFromCenter() {
-            var $prev = data.currentCenterItem.prev();
-            if ($prev.length <= 0) {
-                $prev = data.currentCenterItem.parent().children().last();
-            }
-            return $prev;
-        }
+        // $(this).find('a').bind("click", function (event) {
+        //     var isCenter = $(this).find('img').data('currentPosition') == 0;
+        //     // should we disable the links?
+        //     if (options.linkHandling === 1 || // turn off all links
+        //         (options.linkHandling === 2 && !isCenter)) // turn off all links except center
+        //     {
+        //         event.preventDefault();
+        //         return false;
+        //     }
+        // });
+        //
+        // function nextItemFromCenter() {
+        //     var $next = data.currentCenterItem.next();
+        //     if ($next.length <= 0) {
+        //         $next = data.currentCenterItem.parent().children().first();
+        //     }
+        //     return $next;
+        // }
+        //
+        // function prevItemFromCenter() {
+        //     var $prev = data.currentCenterItem.prev();
+        //     if ($prev.length <= 0) {
+        //         $prev = data.currentCenterItem.parent().children().last();
+        //     }
+        //     return $prev;
+        // }
 
         /**
          * Intiate a move of the carousel in either direction. Takes care of firing
@@ -575,29 +575,29 @@
         /**
          * Navigation with arrow keys
          */
-        $(document).keydown(function(e) {
-            if (options.keyboardNav) {
-                // arrow left or up
-                if ((e.which === 37 && options.orientation == 'horizontal') || (e.which === 38 && options.orientation == 'vertical')) {
-                    autoPlay(true);
-                    options.autoPlay = 0;
-                    moveOnce('backward');
-                    // arrow right or down
-                } else if ((e.which === 39 && options.orientation == 'horizontal') || (e.which === 40 && options.orientation == 'vertical')) {
-                    autoPlay(true);
-                    options.autoPlay = 0;
-                    moveOnce('forward');
-                }
-                // should we override the normal functionality for the arrow keys?
-                if (options.keyboardNavOverride && (
-                    (options.orientation == 'horizontal' && (e.which === 37 || e.which === 39)) ||
-                    (options.orientation == 'vertical' && (e.which === 38 || e.which === 40))
-                )) {
-                    e.preventDefault();
-                    return false;
-                }
-            }
-        });
+        // $(document).keydown(function(e) {
+        //     if (options.keyboardNav) {
+        //         // arrow left or up
+        //         if ((e.which === 37 && options.orientation == 'horizontal') || (e.which === 38 && options.orientation == 'vertical')) {
+        //             autoPlay(true);
+        //             options.autoPlay = 0;
+        //             moveOnce('backward');
+        //             // arrow right or down
+        //         } else if ((e.which === 39 && options.orientation == 'horizontal') || (e.which === 40 && options.orientation == 'vertical')) {
+        //             autoPlay(true);
+        //             options.autoPlay = 0;
+        //             moveOnce('forward');
+        //         }
+        //         // should we override the normal functionality for the arrow keys?
+        //         if (options.keyboardNavOverride && (
+        //             (options.orientation == 'horizontal' && (e.which === 37 || e.which === 39)) ||
+        //             (options.orientation == 'vertical' && (e.which === 38 || e.which === 40))
+        //         )) {
+        //             e.preventDefault();
+        //             return false;
+        //         }
+        //     }
+        // });
 
         /**
          * Public API methods
@@ -643,7 +643,7 @@
     $.fn.waterwheelCarousel.defaults = {
         // number tweeks to change apperance
         startingItem:               1,   // item to place in the center of the carousel. Set to 0 for auto
-        separation:                 75, // distance between items in carousel
+        separation:                 125, // distance between items in carousel
         separationMultiplier:       0.6, // multipled by separation distance to increase/decrease distance for each additional item
         horizonOffset:              0,   // offset each item from the "horizon" by this amount (causes arching)
         horizonOffsetMultiplier:    1,   // multipled by horizon offset to increase/decrease offset for each additional item
@@ -664,7 +664,7 @@
         orientation:                'horizontal',      // indicate if the carousel should be 'horizontal' or 'vertical'
         activeClassName:            'carousel-center', // the name of the class given to the current item in the center
         keyboardNav:                false,             // set to true to move the carousel with the arrow keys
-        keyboardNavOverride:        true,              // set to true to override the normal functionality of the arrow keys (prevents scrolling)
+        keyboardNavOverride:        false,              // set to true to override the normal functionality of the arrow keys (prevents scrolling)
         imageNav:                   true,              // clicking a non-center image will rotate that image to the center
 
         // preloader

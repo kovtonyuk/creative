@@ -18,41 +18,130 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 72px auto;
+    margin: 70px auto;
 }
 
 .about_carousel {
-    margin: 0 auto;
-    width:800px;
+    margin: 0;
+    width:400px;
     height: 300px;
     position: relative;
 }
 .about_carousel img {
     display: none; /* hide images until carousel prepares them */
     cursor: pointer; /* not needed if you wrap carousel items in links */
+    width: 80%;
+    border: 4px solid #fff;
 }
 
 .about__item--text {
-    margin: 28px auto 0 105px;
+    /*margin: 0 auto 0 105px;*/
+    width: 400px;
+    padding-left: 110px;
 }
 
-.about__header {
-    margin: 0;
-    font-size: 1.375rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
+.accordion-container {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border-top: none;
+    outline: 0;
+    cursor: pointer
 }
 
-.about__description {
-    margin-top: -9px;
-    font-size: 1.1rem;
-    line-height: 1.5;
+.content-entry {
     text-align: left;
-    padding-bottom: 44px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-
 }
+
+.accordion-container .article-title {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 9px 80px;
+    border-top: 1px solid #ebebeb;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #262626;
+    cursor: pointer;
+}
+
+.accordion-container .article-title:hover,
+.accordion-container .article-title:active,
+.accordion-container .content-entry.open .article-title {
+    background-color: #f7f7f7;
+    color: #ff9c00;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.accordion-container .article-title:hover i:before,
+.accordion-container .article-title:hover i:active,
+.accordion-container .content-entry.open i {
+    color: #ff9c00;
+}
+
+.accordion-container .content-entry i {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #262626;
+}
+
+.accordion-container .content-entry i:before {
+    content: "+ ";
+}
+
+.accordion-container .content-entry.open i:before {
+    content: "- ";
+}
+
+.accordion-content {
+    display: none;
+    padding: 0 15px 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+/* This stuff is just for the Codepen demo */
+
+#content {
+    width: 100%;
+}
+
+.accordion-container,
+#description {
+    width: 95%;
+    margin: 5px 12px;
+}
+
+#description p {
+    line-height: 1.5;
+}
+
+#description h2 {
+    text-align: center;
+}
+
+/*.about__header {*/
+    /*margin: 0;*/
+    /*font-size: 1.375rem;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-weight: 100;*/
+/*}*/
+
+/*.about__description {*/
+    /*margin-top: -9px;*/
+    /*font-size: 1.1rem;*/
+    /*line-height: 1.5;*/
+    /*text-align: left;*/
+    /*padding-bottom: 44px;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-weight: 100;*/
+
+/*}*/
 
 
 /*----- Style for services section -----*/
