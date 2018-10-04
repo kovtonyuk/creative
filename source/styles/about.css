@@ -49,10 +49,6 @@
     cursor: pointer
 }
 
-.content-entry {
-    text-align: left;
-}
-
 .accordion-container .article-title {
     display: block;
     position: relative;
@@ -62,7 +58,7 @@
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: #262626;
+    color: #505050;
     cursor: pointer;
 }
 
@@ -86,7 +82,7 @@
     left: 12px;
     font-style: normal;
     font-size: 1.5rem;
-    color: #262626;
+    color: #505050;
 }
 
 .accordion-container .content-entry i:before {
@@ -106,9 +102,8 @@
     line-height: 1.5;
 }
 /* This stuff is just for the Codepen demo */
-
-#content {
-    width: 100%;
+.content-entry {
+    text-align: left;
 }
 
 .accordion-container,
@@ -121,28 +116,128 @@
     line-height: 1.5;
 }
 
-#description h2 {
-    text-align: center;
+/*----- Progress Bar -----*/
+.skills-bar-container {
+    position: relative;
+    width: 40%;
+    min-width: 300px;
+    /*transform: translate(-50%, -50%);*/
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+.skills-bar-container li {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.skills-bar-container li .progressbar-title {
+    color: #505050;
+}
+.skills-bar-container li .progressbar-title h3 {
+    display: inline-block;
+}
+.skills-bar-container li .progressbar-title .percent {
+    position: absolute;
+    right: 5px;
+    top: 25px;
+}
+.skills-bar-container li .bar-container {
+    background: #ebebeb;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+    display: block;
+}
+.skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    width: 0;
+    height: 40%;
+    top: 3px;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
 }
 
-/*.about__header {*/
-    /*margin: 0;*/
-    /*font-size: 1.375rem;*/
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-weight: 100;*/
-/*}*/
+.skills-bar-container li .bar-container #progress-ui {
+    animation-name: progress-ui;
+    animation-delay: 1.4s;
+}
 
-/*.about__description {*/
-    /*margin-top: -9px;*/
-    /*font-size: 1.1rem;*/
-    /*line-height: 1.5;*/
-    /*text-align: left;*/
-    /*padding-bottom: 44px;*/
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-weight: 100;*/
+.skills-bar-container li .bar-container #progress-html {
+    animation-name: progress-html;
+    animation-delay: 0.7s;
+}
 
-/*}*/
-
+.skills-bar-container li .bar-container #progress-javascript {
+    animation-name: progress-javascript;
+    animation-delay: 2.1s;
+}
+.skills-bar-container li .bar-container #progress-php {
+    animation-name: progress-php;
+    animation-delay: 2.8s;
+}
+.skills-bar-container li .bar-container #progress-web_design {
+    animation-name: progress-web_design;
+    animation-delay: 3.5s;
+}
+.progressred {
+    background-color: #c0392b;
+}
+.progressblue {
+    background-color: #19f;
+}
+.progresspurple {
+    background-color: #9b59b6;
+}
+.progressorange {
+    background-color: #ffa500;
+}
+.progressgreen {
+    background-color: #27ae60;
+}
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 95%;
+    }
+}
+@keyframes progress-ui {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+@keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+@keyframes progress-web_design {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
 
 /*----- Style for services section -----*/
 .services_section {
