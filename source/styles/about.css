@@ -464,6 +464,10 @@
     margin: 10px;
 }
 
+.member_social--icon:hover {
+    color: #ff9c00;
+}
+
 .member__description--icon {
     margin-bottom: 10px;
 }
