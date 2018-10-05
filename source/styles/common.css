@@ -112,6 +112,14 @@ body {
     background: #ff9c00;
 }
 
+.button_black--submit {
+    width: 172px;
+    color: #fff;
+    background: #131313;
+    border: none;
+    padding: 8px 0;
+}
+
 /*----- Active class for carousel*/
 .is_active  {
     display: block;

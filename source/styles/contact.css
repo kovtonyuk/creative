@@ -10,8 +10,8 @@
 #contact .map {
     margin: 36px auto 0;
     position: relative;
-    /*background: rgba(0,0,0,0.5);*/
-    /*background-size: cover;*/
+    background: url(../images/map.png) center no-repeat #f0f0f2;
+    background-size: cover;
     z-index: 4;
     width: 100%;
     height: 354px;
@@ -22,9 +22,16 @@
     height: 354px;
 }
 
+.contact__content {
+    padding: 26px 0;
+}
+
 .address {
+    position: absolute;
     width: 230px;
     height: 81px;
+    top: 17%;
+    left: 41%;
     background: #262626;
     color: #d7d7d7;
     padding: 10px 15px;
@@ -34,21 +41,35 @@
     line-height: 1.5;
 }
 
-.contact__content {
-    position: absolute;
-    height: 354px;
-    top: 13%;
-    left: 43%;
-}
-
-.contact__content:before {
+.address:before {
     content: '';
     position: absolute;
-    top: 28%;
+    top: 100%;
     left: 46%;
     width: 0;
     height: 0;
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-top: 28px solid #262626;
+}
+
+.form {
+    position: relative;
+    border-radius: 3px;
+    color: #828282;
+}
+
+.form__fields {
+    margin-bottom: 24px;
+}
+
+.form__input {
+    width: 242px;
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    margin-bottom: 6px;
+    border-left: 2px solid #ff9c00;
 }
