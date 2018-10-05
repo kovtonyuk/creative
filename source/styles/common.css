@@ -120,6 +120,10 @@ body {
     padding: 8px 0;
 }
 
+.button_black--submit:hover {
+    color: #ff9c00;
+}
+
 /*----- Active class for carousel*/
 .is_active  {
     display: block;
