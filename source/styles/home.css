@@ -23,6 +23,7 @@
     right: 41%;
     top: 21%;
     left: 15%;
+    width: 450px;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -35,6 +36,7 @@
     right: 15%;
     top: 21%;
     left: 41%;
+    width: 450px;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
