@@ -81,7 +81,7 @@ li:last-child {
 
 /*----- Social menu from footer navigation style*/
 #menu__social {
-    margin: 6px 0 30px;
+    margin: 33px 0 53px;
 }
 
 #menu__social .nav-menu--social {
@@ -98,7 +98,7 @@ li:last-child {
 
 #menu__social li {
     list-style: none;
-    width: 63px;
+    width: 50px;
     text-transform: uppercase;
 }
 

@@ -7,12 +7,6 @@
     height: 280px;
 }
 
-.about_section,
-.services_section,
-.teamwork_section {
-    text-align: center;
-}
-
 /*----- Style for about section -----*/
 .about__content {
     display: flex;

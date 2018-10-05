@@ -1,0 +1,54 @@
+/*----- Common style -----*/
+#contact .hero {
+    position: relative;
+    background: url(../images/contact_hero.png) center right no-repeat #f0f0f2;
+    background-size: contain;
+    width: 100%;
+    height: 280px;
+}
+
+#contact .map {
+    margin: 36px auto 0;
+    position: relative;
+    /*background: rgba(0,0,0,0.5);*/
+    /*background-size: cover;*/
+    z-index: 4;
+    width: 100%;
+    height: 354px;
+}
+
+#contact .map iframe {
+    width: 100%;
+    height: 354px;
+}
+
+.address {
+    width: 230px;
+    height: 81px;
+    background: #262626;
+    color: #d7d7d7;
+    padding: 10px 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.contact__content {
+    position: absolute;
+    height: 354px;
+    top: 13%;
+    left: 43%;
+}
+
+.contact__content:before {
+    content: '';
+    position: absolute;
+    top: 28%;
+    left: 46%;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 28px solid #262626;
+}

@@ -44,6 +44,10 @@ body {
     border-bottom: 5px solid #ff9c00;
 }
 
+.section {
+    text-align: center;
+}
+
 /*----- Style for hero section on pages -----*/
 .hero--description {
     z-index: 10;
