@@ -23,7 +23,10 @@
 }
 
 .contact__content {
+    display: flex;
     padding: 26px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .address {
@@ -64,7 +67,7 @@
 }
 
 .form__input {
-    width: 242px;
+    width: 490px;
     display: block;
     padding: 8px 20px;
     border: 1px solid #d8d8d8;
@@ -86,4 +89,32 @@ textarea::placeholder {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     font-size: .6rem;
+}
+
+.office_info {
+    font-family: 'Lato', sans-serif;
+    color: #262626;
+    line-height: 1;
+}
+
+.title__office_info {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: auto;
+    width: 328px;
+}
+
+.text__office_info {
+    font-weight: 100;
+    font-size: .8rem;
+}
+
+.decription__office_info {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.title_discription__office_info {
+    font-weight: 700;
 }

@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/footer.css">
 
-    <link rel="stylesheet" href="styles/fonts.css">
+    <!--<link rel="stylesheet" href="styles/fonts.css">-->
     <link rel="stylesheet" href="styles/nav_carousel.css">
     <link rel="stylesheet" href="styles/common.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Creative</title>
 </head>
@@ -61,34 +62,49 @@
             </p>
         </div>
 
+        <div class="contact__content">
+            <form method="post" action="#" class="form">
+                <div class="form__fields">
+                    <input type="text" placeholder="Name" autocomplete='text' data-valid='required' class="form__input">
+                    <input type="email" placeholder="Email" autocomplete='email' data-valid='required' data-email class="form__input">
+                    <input type="text" placeholder="Subject" autocomplete='text' data-valid='required' class="form__input">
+                    <textarea name="message" id="" cols="30" rows="8" class="form__input" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn button_black--submit button--text">Send message</button>
+            </form>
+
+            <div class="office_info">
+                <h5 class="title__uppercase title__office_info">Office info</h5>
+                <p class="text__office_info">Lorem ipsum dolor sit amet</p>
+                <hr>
+                <p class="decription__office_info">
+                    <span class="title_discription__office_info">Office Hours:</span>  Mon-Friday 8am - 10pm
+                    <br>
+                    <br>
+                    <span class="title_discription__office_info">Address:</span> Kyiv 123, Ukraine
+                    <br>
+                    <br>
+                    <span class="title_discription__office_info">Tell:</span>  +0000000000000<br>
+                    <span class="title_discription__office_info">Email:</span>  lorem3@gmail.com
+                </p>
+            </div>
+        </div>
+
     </div>
 
+
+
     <div class="map">
-
-        <div class="contact__content">
-            <div class="container">
-                <div class="address">
-                    <span>
-                        ukraine, creativia
-                        <br>
-                        Address: kyiv 123
-                        <br>
-                        Phone: +0000000000000
-                        <br>
-                        Email: lorem3@gmail.com
-                    </span>
-                </div>
-
-                <form method="post" action="#" class="form">
-                    <div class="form__fields">
-                        <input type="text" placeholder="Name" autocomplete='text' data-valid='required' class="form__input">
-                        <input type="email" placeholder="Email" autocomplete='email' data-valid='required' data-email class="form__input">
-                        <input type="text" placeholder="Subject" autocomplete='text' data-valid='required' class="form__input">
-                        <textarea name="message" id="" cols="30" rows="8" class="form__input" placeholder="Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn button_black--submit button--text">Send message</button>
-                </form>
-            </div>
+        <div class="address">
+            <span>
+                ukraine, creativia
+                <br>
+                Address: kyiv 123
+                <br>
+                Phone: +0000000000000
+                <br>
+                Email: lorem3@gmail.com
+            </span>
         </div>
     </div>
 
@@ -112,7 +128,8 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="js/search.js"></script>
 <!--<script src="js/change_active_menu.js"></script>-->
 </body>
 </html>
