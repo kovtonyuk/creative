@@ -9,20 +9,26 @@ li:last-child {
     margin-right: 0;
 }
 
-a {
+#menu a,
+#menu_sort a,
+#menu__social a{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #777777;
     text-decoration: none;
 }
 
-a:hover {
+#menu a:hover,
+#menu_sort a:hover,
+#menu__social a:hover {
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
     border-bottom: 2px solid #ff9c00;
 }
 
-.active a {
+#menu .active a,
+#menu_sort .active a,
+#menu__social .active a {
     padding: 13px 0;
     color: #ff9c00;
     border-top: 2px solid #ff9c00;

@@ -40,10 +40,15 @@
     background: #131313;
     padding: 80px 20px 30px;
     text-align: center;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.portfolio__description a {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #fff;
-    z-index: 3;
+    text-decoration: none;
 }
 
 .portfolio__description--icon {
@@ -59,4 +64,5 @@
 .portfolio__text {
     font-size: .875rem;
     line-height: 1.5;
+    color: #777777;
 }
