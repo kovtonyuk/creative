@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/navigation.css">
     <link rel="stylesheet" href="styles/portfolio.css">
@@ -15,43 +16,11 @@
     <link rel="stylesheet" href="styles/nav_carousel.css">
     <link rel="stylesheet" href="styles/common.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Creative</title>
 </head>
 
 <body>
-
-<!--<header class="header">-->
-    <!--<div class="container">-->
-        <!--<a href="index.html" class="logo">-->
-            <!--<img src="images/logo.png" alt="logo" class="logo__picture">-->
-        <!--</a>-->
-
-        <!--<section>-->
-            <!--<div class="menu" >-->
-                <!--<ul>-->
-                    <!--<li class="active"><a href="index.html">Home</a></li>-->
-                    <!--<li><a href="portfolio.html">Portfolio</a></li>-->
-                    <!--<li><a href="about.html">About</a></li>-->
-                    <!--<li><a href="blog.html">Blog</a></li>-->
-                    <!--<li><a href="contact.html">Contact</a></li>-->
-                    <!--<li>-->
-                        <!--<div class="box">-->
-                            <!--<form action="">-->
-                                <!--<label class="search" for="">-->
-                                    <!--<button class="s-b" type="submit"><i class="fa fa-search"></i></button>-->
-                                    <!--<input class="s-i" type="search" />-->
-                                <!--</label>-->
-                            <!--</form>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</section>-->
-
-    <!--</div>-->
-<!--</header>-->
 
 <header>
     <div class="container">
@@ -67,16 +36,14 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li>
-                            <div class="box">
-                                <form action="">
-                                    <label class="search" for="">
-                                        <button class="s-b" type="submit"><i class="fa fa-search"></i></button>
-                                        <input class="s-i" type="search" />
-                                    </label>
-                                </form>
-                            </div>
-                        </li>
+                        <div class="box">
+                            <form action="">
+                                <label class="search" for="search">
+                                    <button class="s-b" type="submit"><i class="fa fa-search"></i></button>
+                                    <input id="search" class="s-i" type="search" placeholder="search..." />
+                                </label>
+                            </form>
+                        </div>
                     </ul>
                 </div>
 
@@ -286,10 +253,10 @@
         </div>
     </div>
 </footer>
-<script src="js/jquery.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="js/search.js"></script>
 <script src="js/change_active_menu.js"></script>
 <script src="js/hover_portfolio.js"></script>
 <script src="js/home_carousel.js"></script>
-<script src="js/search.js"></script>
 </body>
 </html>

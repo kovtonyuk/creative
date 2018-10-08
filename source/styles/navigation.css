@@ -23,7 +23,7 @@ a:hover {
 }
 
 .active a {
-    padding: 14px 0;
+    padding: 13px 0;
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
     border-bottom: 2px solid #ff9c00;
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .nav-menu a:hover {
-    padding: 14px 0;
+    padding: 13px 0;
 }
 
 .box {
@@ -106,7 +106,8 @@ a:hover {
 
 .search .s-b,
 .search .s-i {
-    height: 30px;
+    width: 30px;
+    height: 32px;
     border: 0;
     margin: 0;
     padding: 0;
@@ -115,7 +116,7 @@ a:hover {
 }
 
 .search .s-b {
-    color: #C1C1C1;
+    color: #777777;
     font-size: 18px;
 }
 
@@ -127,7 +128,7 @@ a:hover {
 }
 
 .search-exp .search .s-b {
-    background: #49CBB5;
+    background: #ff9c00;
     color: #FFF;
     padding: 0 8px;
 }

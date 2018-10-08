@@ -22,16 +22,29 @@
 
 <header>
     <div class="container">
-        <div class="header"><a class="logo" href="index.html"><img class="logo__picture" src="images/logo.png" alt="logo"></a>
-            <div class="nav-menu" id="menu">
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                    <li><i class="fas fa-search"></i></li>
-                </ul>
+        <div class="header">
+            <a class="logo" href="index.html">
+                <img class="logo__picture" src="images/logo.png" alt="logo">
+            </a>
+            <div class="nav-menu">
+                <div id="menu" class="menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <div class="box">
+                            <form action="">
+                                <label class="search" for="search">
+                                    <button class="s-b" type="submit"><i class="fa fa-search"></i></button>
+                                    <input id="search" class="s-i" type="search" placeholder="search..." />
+                                </label>
+                            </form>
+                        </div>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
