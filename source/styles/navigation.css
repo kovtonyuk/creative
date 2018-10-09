@@ -160,13 +160,17 @@ li:last-child {
     color: #777777;
 }
 
-#menu_sort li {
+#menu_sort button {
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #777777;
     text-decoration: none;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
 }
 
 #menu_sort span:hover {

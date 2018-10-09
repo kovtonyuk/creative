@@ -130,33 +130,33 @@
             </p>
             <div class="nav-menu--sort" id="menu_sort">
                 <ul class="menu--sort">
-                    <li class="active all">
-                        <span>all</span>
+                    <li class="active">
+                        <button data-id="all">all</button>
                     </li>
-                    <li class="logo">
-                        <span>logo</span>
+                    <li>
+                        <button data-id="logo">logo</button>
                     </li>
-                    <li class="mobile_app">
-                        <span>mobile app</span>
+                    <li>
+                        <button data-id="mobile_app">mobile app</button>
                     </li>
-                    <li class="wordpress">
-                        <span>wordpress</span>
+                    <li>
+                        <button data-id="wordpress">wordpress</button>
                     </li>
-                    <li class="web_design">
-                        <span>web design</span>
+                    <li>
+                        <button data-id="web_design">web design</button>
                     </li>
-                    <li class="ui_ux">
-                        <span>ui / ux</span>
+                    <li>
+                        <button data-id="ui_ux">ui / ux</button>
                     </li>
-                    <li class="branding">
-                        <span>branding</span>
+                    <li>
+                        <button data-id="branding">branding</button>
                     </li>
                 </ul>
             </div>
 
-            <div class="portfolio__wrapper">
+            <div class="portfolio__wrapper" id="portfolio__wrapper">
                 <!--Work 1-->
-                <div class="portfolio__item">
+                <div class="portfolio__item ui_ux">
                     <img src="images/portfolio_1.png" alt="portfolio_1">
                     <!--Hover block-->
                     <div class="portfolio__description">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <!--Work 2-->
-                <div class="portfolio__item"><img src="images/portfolio_2.png" alt="portfolio_2">
+                <div class="portfolio__item ui_ux"><img src="images/portfolio_2.png" alt="portfolio_2">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -189,7 +189,7 @@
                     </div>
                 </div>
                 <!--Work 3-->
-                <div class="portfolio__item"><img src="images/portfolio_3.png" alt="portfolio_3">
+                <div class="portfolio__item branding"><img src="images/portfolio_3.png" alt="portfolio_3">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -205,7 +205,7 @@
                     </div>
                 </div>
                 <!--Work 4-->
-                <div class="portfolio__item"><img src="images/portfolio_4.png" alt="portfolio_4">
+                <div class="portfolio__item web_design"><img src="images/portfolio_4.png" alt="portfolio_4">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
                 <!--Work 5-->
-                <div class="portfolio__item"><img src="images/portfolio_5.png" alt="portfolio_5">
+                <div class="portfolio__item branding"><img src="images/portfolio_5.png" alt="portfolio_5">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <!--Work 6-->
-                <div class="portfolio__item"><img src="images/portfolio_6.png" alt="portfolio_6">
+                <div class="portfolio__item mobile_app"><img src="images/portfolio_6.png" alt="portfolio_6">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -254,7 +254,7 @@
                 </div>
 
                 <!--Work 7-->
-                <div class="portfolio__item hidden">
+                <div class="portfolio__item hidden wordpress">
                     <img src="images/portfolio_1.png" alt="portfolio_1">
                     <!--Hover block-->
                     <div class="portfolio__description">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 <!--Work 8-->
-                <div class="portfolio__item hidden"><img src="images/portfolio_2.png" alt="portfolio_2">
+                <div class="portfolio__item hidden logo"><img src="images/portfolio_2.png" alt="portfolio_2">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -287,7 +287,7 @@
                     </div>
                 </div>
                 <!--Work 9-->
-                <div class="portfolio__item hidden"><img src="images/portfolio_3.png" alt="portfolio_3">
+                <div class="portfolio__item hidden mobile_app"><img src="images/portfolio_3.png" alt="portfolio_3">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <!--Work 10-->
-                <div class="portfolio__item hidden"><img src="images/portfolio_4.png" alt="portfolio_4">
+                <div class="portfolio__item hidden web_design"><img src="images/portfolio_4.png" alt="portfolio_4">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -319,7 +319,7 @@
                     </div>
                 </div>
                 <!--Work 11-->
-                <div class="portfolio__item hidden"><img src="images/portfolio_5.png" alt="portfolio_5">
+                <div class="portfolio__item hidden wordpress"><img src="images/portfolio_5.png" alt="portfolio_5">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -335,7 +335,7 @@
                     </div>
                 </div>
                 <!--Work 12-->
-                <div class="portfolio__item hidden"><img src="images/portfolio_6.png" alt="portfolio_6">
+                <div class="portfolio__item hidden logo"><img src="images/portfolio_6.png" alt="portfolio_6">
                     <!--Hover block-->
                     <div class="portfolio__description">
                         <a href="portfolio_details.html">
@@ -381,6 +381,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src="js/search.js"></script>
 <script src="js/read_more.js"></script>
+<script src="js/sorting_portfolio.js"></script>
 <script src="js/change_active_menu.js"></script>
 <script src="js/hover_portfolio.js"></script>
 <script src="js/home_carousel.js"></script>
