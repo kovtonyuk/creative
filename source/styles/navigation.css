@@ -10,7 +10,6 @@ li:last-child {
 }
 
 #menu a,
-#menu_sort a,
 #menu__social a{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
@@ -19,7 +18,6 @@ li:last-child {
 }
 
 #menu a:hover,
-#menu_sort a:hover,
 #menu__social a:hover {
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
@@ -162,12 +160,27 @@ li:last-child {
     color: #777777;
 }
 
-#menu_sort a {
+#menu_sort li {
     font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#menu_sort a:hover {
+#menu_sort span:hover {
     padding: 15px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
+}
+
+#menu_sort .active li {
+    padding: 13px 0;
+    color: #ff9c00;
+    border-top: 2px solid #ff9c00;
+    border-bottom: 2px solid #ff9c00;
 }
 
 /*----- Social menu from footer navigation style*/

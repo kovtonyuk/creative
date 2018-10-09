@@ -91,6 +91,7 @@ body {
     padding: 15px 30px;
     width: 125px;
     margin: auto;
+    cursor: pointer;
 }
 
 .button--text {
@@ -129,8 +130,13 @@ body {
     color: #ff9c00;
 }
 
-/*----- Active class for carousel*/
+/*----- Active class for carousel -----*/
 .is_active  {
     display: block;
     left: 0;
+}
+
+/*----- Hidden class for Load More -----*/
+.hidden {
+    display: none;
 }
