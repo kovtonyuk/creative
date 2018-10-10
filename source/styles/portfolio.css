@@ -9,6 +9,7 @@
 .portfolio__section {
     text-align: center;
     padding: 0 0 60px;
+    background: #fafafa;
 }
 
 .portfolio__wrapper {
@@ -66,4 +67,163 @@
     font-size: .875rem;
     line-height: 1.5;
     color: #777777;
+}
+
+/*----- Portfolio details Style -----*/
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    color: #777777;
+}
+
+.portfolio-content--picture {
+    width: 43%;
+}
+
+.portfolio-content--picture img {
+    width: 100%;
+}
+
+.portfolio-content--description {
+    width: 50%;
+    text-align: left;
+}
+
+.portfolio-content--description button {
+    border: none;
+    outline: none;
+}
+
+.fa-share-alt {
+    margin-right: 5px;
+}
+
+@charset "UTF-8";
+/*
+Using FontAwesome for icons
+https://fortawesome.github.io/Font-Awesome/
+*/
+.share-button {
+    position: relative;
+    width: 50px;
+    /*margin: 20px;*/
+}
+
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 20px;
+    z-index: 10;
+    display: block;
+    cursor: pointer;
+}
+
+.toggle:after {
+    position: relative;
+    display: block;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    font-family: "FontAwesome";
+    content: " SHARE";
+    /*line-height: 50px;*/
+    /*font-size: 26px;*/
+    /*text-align: center;*/
+    /*left: -2px;*/
+}
+.toggle-input {
+    display: none;
+}
+.toggle-input:checked + .toggle:after, .toggle-input:checked + .toggle:before {
+    background-color: #fff;
+    content: "";
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 23px;
+}
+.toggle-input:checked + .toggle:after {
+    transform: rotate(45deg);
+    animation: bar1 0.3s forwards;
+}
+.toggle-input:checked + .toggle:before {
+    transform: rotate(-45deg);
+    animation: bar2 0.3s forwards;
+}
+
+.network-list li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    opacity: 0;
+    transition: all 0.25s cubic-bezier(0.43, 1.17, 0.69, 1.24);
+}
+.network-list a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    line-height: 50px;
+    text-indent: 120%;
+    text-decoration: none;
+}
+.network-list a:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    font-family: "FontAwesome";
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    line-height: 50px;
+    text-indent: 0;
+    box-shadow: inset 0 0 0 1px #C8C7C0;
+}
+.network-list .twitter a:before {
+    content: "";
+    color: #00C3F3;
+}
+.network-list .twitter a:hover:before {
+    box-shadow: inset 0 0 0 2px #00C3F3;
+}
+.network-list .facebook a:before {
+    content: "";
+    color: #2C609B;
+}
+.network-list .facebook a:hover:before {
+    box-shadow: inset 0 0 0 2px #2C609B;
+}
+.network-list .googleplus a:before {
+    content: "";
+    color: #EC3F25;
+}
+.network-list .googleplus a:hover:before {
+    box-shadow: inset 0 0 0 2px #EC3F25;
+}
+
+input:checked ~ .network-list li {
+    opacity: 1;
+}
+input:checked ~ .network-list li:nth-child(1) {
+    left: 120px;
+}
+input:checked ~ .network-list li:nth-child(2) {
+    left: 180px;
+}
+input:checked ~ .network-list li:nth-child(3) {
+    left: 240px;
 }

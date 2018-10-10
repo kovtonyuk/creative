@@ -220,3 +220,54 @@ li:last-child {
 #menu__social a:hover {
     padding: 15px 20px;
 }
+
+/*----- Menu controls from portfolio details navigation style*/
+#menu_controls {
+    background: #fff;
+}
+
+#menu_controls .menu--controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    color: #777777;
+    text-align: center;
+}
+
+#menu_controls li {
+    margin-right: 0;
+    padding: 20px 0;
+    width: 130px;
+    border-left: 1px solid #ebebeb;
+}
+
+#menu_controls li:last-child {
+    border-right: 1px solid #ebebeb;
+}
+
+#menu_controls a {
+    font-size: 0.8rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #777777;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+}
+
+#menu_controls a:hover {
+    padding: 15px 0;
+    color: #ff9c00;
+}
+
+#menu_controls .fa-angle-left {
+    margin-right: 10px;
+}
+
+#menu_controls .fa-angle-right {
+    margin-left: 10px;
+}
