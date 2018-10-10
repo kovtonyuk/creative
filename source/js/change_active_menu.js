@@ -1,5 +1,5 @@
 /*----- Main menu -----*/
-$('.menu li').click(function() {
+$('.menu li a').click(function() {
     $('.menu .active').removeClass('active');
     $(this).addClass('active');
 });
