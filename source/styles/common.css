@@ -130,19 +130,6 @@ body {
     color: #ff9c00;
 }
 
-.button_black--share {
-    width: 75px;
-    padding: 15px;
-    color: #ff9c00;
-    margin: 0;
-    background: #131313;
-}
-
-.button_black--share:hover {
-    color: #fff;
-    background: #ff9c00;
-}
-
 /*----- Active class for carousel -----*/
 .is_active {
     display: block;
