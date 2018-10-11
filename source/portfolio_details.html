@@ -85,10 +85,69 @@
         <div class="content">
             <div class="container">
                 <div class="portfolio-content">
-                    <div class="portfolio-content--picture">
-                        <img src="images/portfolio_details_1.png" alt="portfolio_details_1">
-                    </div>
+                    <div class="container">
 
+                        <div id="myCarousel" class="carousel slide portfolio-content--picture">
+                            <div class="carousel-inner">
+                                <div class="active item" data-slide-number="0">
+                                    <img src="images/portfolio_details_1.png">
+                                </div>
+                                <div class="item" data-slide-number="1">
+                                    <img src="images/portfolio_details_2.png">
+                                </div>
+                                <div class="item" data-slide-number="2">
+                                    <img src="images/portfolio_details_3.png">
+                                </div>
+                                <div class="item" data-slide-number="3">
+                                    <img src="images/portfolio_details_4.png">
+                                </div>
+                            </div>
+
+                            <!-- Controls-->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span>
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span>
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+
+                        <div class="slider-thumbs" id="slider-thumbs">
+                            <ul class="list-inline">
+                                <li>
+                                    <a id="carousel-thumb-0" class="selected">
+                                        <img src="images/portfolio_details_1.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="carousel-thumb-1">
+                                        <img src="images/portfolio_details_2.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="carousel-thumb-2">
+                                        <img src="images/portfolio_details_3.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="carousel-thumb-3">
+                                        <img src="images/portfolio_details_4.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--<div class="portfolio-content&#45;&#45;picture">-->
+                        <!--<img src="images/portfolio_details_1.png" alt="portfolio_details_1">-->
+                    <!--</div>-->
                     <div class="portfolio-content--description">
                         <div class="share">
                             <div class="share-button">
@@ -184,7 +243,9 @@
 </footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
 <script src="js/search.js"></script>
 <script src="js/change_active_menu.js"></script>
+<script src="js/portfolio_details_carousel.js"></script>
 </body>
 </html>

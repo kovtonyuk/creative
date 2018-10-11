@@ -15,6 +15,11 @@ hr {
     margin: 0;
 }
 
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
 .container {
     position: relative;
     max-width: 912px;
