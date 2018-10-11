@@ -11,6 +11,10 @@ body {
     height: 100%;
 }
 
+hr {
+    margin: 0;
+}
+
 .container {
     position: relative;
     max-width: 912px;
