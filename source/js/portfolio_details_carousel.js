@@ -1,5 +1,5 @@
 $('#myCarousel').carousel({
-    interval: 350000
+    interval: 3500
 });
 
 // This event fires immediately when the slide instance method is invoked.
