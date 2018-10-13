@@ -6,10 +6,14 @@
     height: 280px;
 }
 
-.portfolio__section {
+.portfolio__section,
+.portfolio__section--details {
     text-align: center;
     padding: 0 0 60px;
-    background: #fafafa;
+}
+
+.portfolio__section--details {
+    background: #f2f2f2;
 }
 
 .portfolio__wrapper {
@@ -43,7 +47,7 @@
     z-index: 3;
     cursor: pointer;
     width: 261px;
-    height: 157px;
+    height: 153px;
 }
 
 .portfolio__description a {
