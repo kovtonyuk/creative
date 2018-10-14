@@ -7,7 +7,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 73px;
+    height: 65px;
 }
 
 header .logo {
@@ -16,5 +16,5 @@ header .logo {
 }
 
 header .logo__picture {
-    width: 72%;
+    width: 71%;
 }

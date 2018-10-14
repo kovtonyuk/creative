@@ -22,7 +22,7 @@ $(document).ready(function() {
             //Stuff to do when btn is in the read more state
             $("#toggle_blog").html('<i class="fas fa-angle-up"></i>');
             $(".hidden").slideDown();
-            $(".hidden").addClass("flex");
+            // $(".hidden").addClass("flex");
         } else {
             //Stuff to do when btn is in the read less state
             $("#toggle_blog").html('<i class="fas fa-angle-down"></i>');

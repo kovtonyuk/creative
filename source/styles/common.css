@@ -162,21 +162,13 @@ img {
     cursor: pointer;
 }
 
-.button-post--right,
-.button-post--left {
+.button-post {
     padding: 10px 0;
     width: 95px;
     background: #777777;
     text-align: center;
     font-size: .7rem;
-}
-
-.button-post--right {
     margin-left: 0;
-}
-
-.button-post--left {
-    margin-right: 0;
 }
 
 /*----- Active class for carousel -----*/
