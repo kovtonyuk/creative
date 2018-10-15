@@ -31,11 +31,32 @@ img {
     text-transform: uppercase;
 }
 
-.section__title {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+.title__bold {
     font-weight: 700;
+}
+
+.comment__block--title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 6px auto;
+}
+
+.section__title,
+.post__title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.section__title {
+    font-size: 1.5rem;
     margin: 47px 0 32px;
+}
+
+.post__title {
+    font-size: 1.8rem;
+    margin: 47px 0 11px;
 }
 
 .section__description {
@@ -53,8 +74,7 @@ img {
     background: #f2f2f2;
 }
 
-#about,
-#blog {
+#about {
     background: #131313;
     border-bottom: 5px solid #ff9c00;
 }
@@ -171,6 +191,10 @@ img {
     margin-left: 0;
 }
 
+.button-post:hover {
+    background: #ff9c00;
+}
+
 /*----- Active class for carousel -----*/
 .is_active {
     display: block;
@@ -180,4 +204,42 @@ img {
 /*----- Hidden class for Load More -----*/
 .hidden {
     display: none;
+}
+
+.is-hidden {
+    display: none;
+}
+
+/*----- Form Style -----*/
+.form {
+    position: relative;
+    border-radius: 3px;
+    color: #828282;
+}
+
+.form__fields {
+    margin-bottom: 24px;
+}
+
+.form__input {
+    display: block;
+    padding: 8px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    border-left: 2px solid #ff9c00;
+}
+
+input::placeholder {
+    color: #bababa;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+textarea::placeholder {
+    color: #bababa;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: .6rem;
 }

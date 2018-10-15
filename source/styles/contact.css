@@ -56,41 +56,6 @@
     border-top: 28px solid #262626;
 }
 
-.form {
-    position: relative;
-    border-radius: 3px;
-    color: #828282;
-}
-
-.form__fields {
-    margin-bottom: 24px;
-}
-
-.form__input {
-    width: 490px;
-    display: block;
-    padding: 8px 20px;
-    border: 1px solid #d8d8d8;
-    border-radius: 3px;
-    font-size: 0.875rem;
-    margin-bottom: 6px;
-    border-left: 2px solid #ff9c00;
-}
-
-input::placeholder {
-    color: #bababa;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: .7rem;
-}
-
-textarea::placeholder {
-    color: #bababa;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: .6rem;
-}
-
 .office_info {
     font-family: 'Lato', sans-serif;
     color: #262626;
@@ -117,4 +82,11 @@ textarea::placeholder {
 
 .title_discription__office_info {
     font-weight: 700;
+}
+
+
+/*----- Form style -----*/
+.contact__form--input {
+    width: 490px;
+    margin-bottom: 6px;
 }

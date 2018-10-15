@@ -14,7 +14,7 @@
 /*----- Style for blog section -----*/
 
 .blog {
-    background-color: #f3f3f3;
+    background-color: #131313;
 }
 
 /*@media (max-width: 985px) {*/
@@ -136,3 +136,94 @@
     text-decoration: none;
 }
 
+/*----- Post style -----*/
+.post {
+    background: #fafafa;
+}
+
+.post-icon i {
+    margin-right: 52px;
+}
+
+.post_image img {
+    width: 100%;
+}
+
+.post_text,
+.post_blockquote {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: .8rem;
+    text-align: initial;
+    line-height: 2;
+}
+
+.post_text {
+    max-width: 810px;
+    margin: 35px auto;
+}
+
+.post_blockquote {
+    border: 1px solid #e1e1e1;
+    border-left: 4px solid #ff9c00;
+    margin: 0;
+    padding: 26px;
+}
+
+.comment--line {
+    border: none;
+    color: #ff9c00;
+    background-color: #ff9c00;
+    height: 2px;
+}
+
+.post__form--fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post__form--input {
+    width: 27%;
+    margin-bottom: 17px;
+}
+
+.post__form--textarea {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.form-container {
+    padding-top: 13px;
+    max-width: 810px;
+    margin: auto;
+}
+
+.form-container:before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+     content: '';
+     border: 30px solid transparent;
+     border-bottom: 30px solid #fff;
+     top: -59px;
+ }
+
+.btn-down {
+    position: relative;
+    margin: 0 auto 25px;
+    width: 27px;
+    height: 27px;
+    border: 2px solid #777777;
+    border-radius: 50%;
+}
+
+.btn-down i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #777777;
+    font-size: 1rem;
+}
