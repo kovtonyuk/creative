@@ -271,3 +271,74 @@ li:last-child {
 #menu_controls .fa-angle-right {
     margin-left: 10px;
 }
+
+/*----- Hamburger menu -----*/
+#openup {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    .menu ul {
+        display: none;
+        height: auto;
+    }
+    .menu li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    .menu a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+    .menu a:hover {
+        background: #444;
+    }
+    /*.menu a#openup:after {*/
+        /*content: "";*/
+        /*transform: rotate(-90deg);*/
+        /*-ms-transform: rotate(-90deg);*/
+        /*!* IE 9 *!*/
+        /*-webkit-transform: rotate(-90deg);*/
+        /*!* Safari and Chrome *!*/
+        /*width: 30px;*/
+        /*height: 30px;*/
+        /*display: inline-block;*/
+        /*position: absolute;*/
+        /*right: 5px;*/
+        /*top: 20px;*/
+    /*}*/
+    #openup {
+        display: block;
+        margin: 11px 41px;
+        width: 100%;
+        position: relative;
+    }
+
+    #openup i {
+        font-size: 2rem;
+    }
+}
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    text-align: center;
+    zoom: 1;
+    background: #131313;
+}
+
+/* For IE 6/7 (trigger hasLayout) */

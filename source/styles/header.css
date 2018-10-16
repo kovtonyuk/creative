@@ -18,3 +18,18 @@ header .logo {
 header .logo__picture {
     width: 71%;
 }
+
+/*----- Mobile Style -----*/
+@media (max-width: 480px) {
+    .header {
+        height: 58px;
+    }
+
+    header .logo {
+        margin-left: 43px;
+    }
+
+    header .logo__picture {
+        width: 66%;
+    }
+}
