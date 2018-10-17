@@ -273,72 +273,87 @@ li:last-child {
 }
 
 /*----- Hamburger menu -----*/
-#openup {
+.active{
+    background:#444 !important;
+
+}
+.displaynone{
     display: none;
 }
+.xs-menu-cont{
+    display:none;
+}
+.xs-menu-cont > a {
+    padding: 3px 6px;
+    display: block;
+}
+.xs-menu-cont > a:hover{
+    cursor: pointer;
+}
 
-@media screen and (max-width: 480px) {
-    .menu {
-        height: auto;
-        border-bottom: 0;
-    }
+.xs-menu li {
+    color: #ff9c00;
+    padding: 14px 30px;
 
-    .menu ul {
-        display: none;
-        height: auto;
+}
+.xs-menu  a{
+    text-decoration:none;
+}
+
+#menutoggle i {
+    color: #ff9c00;
+    font-size: 33px;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+/*MediaQuerys*/
+@media (max-width: 480px) {
+    #menu {
+        display:none;
     }
-    .menu li {
-        width: 100%;
-        float: left;
-        position: relative;
+    .xs-menu li a {
+
+        padding:0;
     }
-    .menu a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-    }
-    .menu a:hover {
-        background: #444;
-    }
-    /*.menu a#openup:after {*/
-        /*content: "";*/
-        /*transform: rotate(-90deg);*/
-        /*-ms-transform: rotate(-90deg);*/
-        /*!* IE 9 *!*/
-        /*-webkit-transform: rotate(-90deg);*/
-        /*!* Safari and Chrome *!*/
-        /*width: 30px;*/
-        /*height: 30px;*/
-        /*display: inline-block;*/
-        /*position: absolute;*/
-        /*right: 5px;*/
-        /*top: 20px;*/
-    /*}*/
-    #openup {
+    .xs-menu-cont{
+        width: 50%;
         display: block;
-        margin: 11px 41px;
-        width: 100%;
-        position: relative;
-    }
-
-    #openup i {
-        font-size: 2rem;
+        text-align: right;
+        padding: 11px 36px 0 0;
     }
 }
 
-.cf:before, .cf:after {
-    content: "";
-    display: table;
+
+/*Animation--*/
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.cf:after {
-    clear: both;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-.cf {
-    text-align: center;
-    zoom: 1;
-    background: #131313;
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
-
-/* For IE 6/7 (trigger hasLayout) */

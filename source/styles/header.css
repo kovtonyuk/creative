@@ -22,14 +22,19 @@ header .logo__picture {
 /*----- Mobile Style -----*/
 @media (max-width: 480px) {
     .header {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         height: 58px;
     }
 
     header .logo {
-        margin-left: 43px;
+        width: 43%;
+        padding: 0 43px;
     }
 
     header .logo__picture {
-        width: 66%;
+        width: 100%;
     }
 }
