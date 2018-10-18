@@ -1,16 +1,18 @@
 /*----- Style for navigation on pages -----*/
-li {
+li,
+.nav__link {
     list-style: none;
     margin-right: 29px;
     text-transform: uppercase;
 }
 
-li:last-child {
+li:last-child,
+.nav__link:last-child {
     margin-right: 0;
 }
 
 #menu a,
-#menu__social a{
+#menu__social a {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #777777;
@@ -19,12 +21,13 @@ li:last-child {
 
 #menu a:hover,
 #menu__social a:hover {
+    padding: 13px 0;
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
     border-bottom: 2px solid #ff9c00;
 }
 
-#menu .active a,
+#menu .active,
 #menu__social .active a {
     padding: 13px 0;
     color: #ff9c00;
@@ -33,59 +36,151 @@ li:last-child {
 }
 
 /*----- Main menu navigation style with Item Search -----*/
-.nav-menu {
-    z-index: 2;
-    transform: translate3d(0, 0, 0);
-    transition: all .5s ease-in-out;
-}
-
-.nav-menu, .box {
-    margin: 0;
-    overflow: hidden;
-    padding: 5px 0;
+.menu__icon {
+    display: none;
+    width: 45px;
+    height: 35px;
     position: relative;
+    cursor: pointer;
 }
 
-.nav-menu .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    color: #777777;
-}
-
-.nav-menu .menu ul {
-    position: relative;
-    width: 100%;
-}
-
-.nav-menu ul,
-.nav-menu li {
+.menu__icon span {
     display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #333333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
 }
 
-.nav-menu li {
+.menu__icon span:nth-child(1) {
+    top: 0;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 26px;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu.menu_state_open .menu__links {
+    display: block;
+}
+
+.nav__link {
     display: inline-block;
-    list-style: none;
+    font-size: 0.9rem;
+    text-decoration: none;
     text-transform: uppercase;
-    height: 30px;
-    line-height: 30px;
-    padding: 1px 0;
-    margin-right: 29px;
 }
 
-.nav-menu li:last-child {
-    margin-right: 0;
+/*.nav__link__icon {*/
+    /*display: none;*/
+    /*width: 45px;*/
+    /*height: 35px;*/
+    /*position: relative;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.nav__link__icon span {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*height: 9px;*/
+    /*width: 100%;*/
+    /*background: #fff;*/
+    /*border-radius: 9px;*/
+    /*opacity: 1;*/
+    /*left: 0;*/
+    /*transform: rotate(0deg);*/
+    /*transition: 0.25s ease-in-out;*/
+/*}*/
+
+/*.nav__link__icon span:nth-child(1) {*/
+    /*top: 0;*/
+/*}*/
+
+/*.nav__link__icon span:nth-child(2), .nav__link__icon span:nth-child(3) {*/
+    /*top: 13px;*/
+/*}*/
+
+/*.nav__link__icon span:nth-child(4) {*/
+    /*top: 26px;*/
+/*}*/
+
+@media (max-width: 1080px) {
+    .nav__link {
+        display: block;
+        text-align: center;
+    }
 }
 
-.nav-menu a {
-    font-size: 0.875rem;
-}
+@media (max-width: 1080px) {
+    .menu {
+        margin-right: 20px;
+    }
 
-.nav-menu a:hover {
-    padding: 13px 0;
+    .menu__icon {
+        display: inline-block;
+    }
+
+    .menu__links {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 172px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        overflow: auto;
+    }
+}
+@media (min-width: 500px) and (max-width: 1080px) and (min-width: 501px) and (max-width: 600px) {
+    .menu__links {
+        margin-top: 169px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .menu__icon {
+        display: inline-block;
+    }
+
+    .menu__links {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 183px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 500px) and (max-width: 499px) {
+    .menu__links {
+        margin-top: 224px;
+    }
 }
 
 .box {
@@ -93,6 +188,9 @@ li:last-child {
     overflow: visible;
     text-align: center;
     vertical-align: middle;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
 }
 
 .box form {
@@ -138,7 +236,7 @@ li:last-child {
 
 .search-exp .search .s-i {
     margin: 0 0 0 -5px;
-    padding: 1px 8px 0 6px;
+    padding: 1px 10px 0 6px;
     width: 170px;
 }
 
@@ -270,90 +368,4 @@ li:last-child {
 
 #menu_controls .fa-angle-right {
     margin-left: 10px;
-}
-
-/*----- Hamburger menu -----*/
-.active{
-    background:#444 !important;
-
-}
-.displaynone{
-    display: none;
-}
-.xs-menu-cont{
-    display:none;
-}
-.xs-menu-cont > a {
-    padding: 3px 6px;
-    display: block;
-}
-.xs-menu-cont > a:hover{
-    cursor: pointer;
-}
-
-.xs-menu li {
-    color: #ff9c00;
-    padding: 14px 30px;
-
-}
-.xs-menu  a{
-    text-decoration:none;
-}
-
-#menutoggle i {
-    color: #ff9c00;
-    font-size: 33px;
-    /*margin: 0;*/
-    /*padding: 0;*/
-}
-
-/*MediaQuerys*/
-@media (max-width: 480px) {
-    #menu {
-        display:none;
-    }
-    .xs-menu li a {
-
-        padding:0;
-    }
-    .xs-menu-cont{
-        width: 50%;
-        display: block;
-        text-align: right;
-        padding: 11px 36px 0 0;
-    }
-}
-
-
-/*Animation--*/
-
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
 }

@@ -27,14 +27,16 @@ header .logo__picture {
         flex-wrap: nowrap;
         justify-content: space-between;
         height: 58px;
+        position: relative;
     }
 
     header .logo {
-        width: 43%;
+        /*width: 43%;*/
         padding: 0 43px;
+        margin: 16px 0;
     }
 
     header .logo__picture {
-        width: 100%;
+        width: 66%;
     }
 }

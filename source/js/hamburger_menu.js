@@ -1,24 +1,15 @@
+(function($){
+    $(function() {
+        $('.menu__icon').on('click', function() {
+            $(this).closest('.menu')
+                .toggleClass('menu_state_open');
+        });
 
-$(document).ready(function() {
-    //responsive menu toggle
-    $("#menutoggle").click(function() {
-        $('.xs-menu').toggleClass('displaynone');
+        $('.nav__link').on('click', function() {
+            // do something
 
+            $(this).closest('.menu')
+                .removeClass('menu_state_open');
+        });
     });
-    //add active class on menu
-    $('ul li').click(function(e) {
-        e.preventDefault();
-        $('li').removeClass('active');
-        $(this).addClass('active');
-    });
-    //drop down menu
-    $(".drop-down").hover(function() {
-        $('.mega-menu').addClass('display-on');
-    });
-    $(".drop-down").mouseleave(function() {
-        $('.mega-menu').removeClass('display-on');
-    });
-
-});
-
-	 
+})(jQuery);
