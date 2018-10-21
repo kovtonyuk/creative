@@ -149,8 +149,7 @@ nav li {
 nav a {
   text-align: center;
   text-decoration: none;
-  padding: 10px 0;
-  color: #eee;
+  padding: 15px 0;
 }
 
 nav a#openup {
@@ -161,7 +160,6 @@ nav a#openup {
     .nav-menu {
         height: auto;
         border-bottom: 0;
-        margin-right: 50px;
     }
     .nav-menu ul {
         display: none;
@@ -188,7 +186,8 @@ nav a#openup {
     }
 
     nav #openup i {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-right: 50px;
     }
 }
 .cf:before, .cf:after {
