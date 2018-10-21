@@ -20,29 +20,48 @@
 
 <header>
     <div class="container">
-        <div class="header">
-            <a class="logo" href="index.html">
-                <img class="logo__picture" src="images/logo.png" alt="logo">
-            </a>
-            <div class="nav-menu">
-                <div id="menu" class="menu">
+        <div id="main">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo__picture" src="images/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="nav-menu" id="nav">
+                <div class="nav-fostrap">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="active"><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html" >About</a>
+                        </li>
+                        <li class="active">
+                            <a href="blog.html" >Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
                         <div class="box">
                             <form action="">
                                 <label class="search" for="search">
                                     <button class="s-b" type="submit"><i class="fa fa-search"></i></button>
-                                    <input id="search" class="s-i" type="search" placeholder="search..." />
+                                    <input id="search" class="s-i" type="search" placeholder="search..."/>
                                 </label>
                             </form>
                         </div>
                     </ul>
                 </div>
-
+                <div>
+                    <div class="navbar-fostrap">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -171,6 +190,7 @@
 </footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="js/toggle_menu.js"></script>
 <script src="js/search.js"></script>
 <script src="js/change_active_menu.js"></script>
 <script src="js/form_hidden.js"></script>

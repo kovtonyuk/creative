@@ -1,20 +1,7 @@
-$(function() {
-    menu = $('nav ul');
 
-    $('#openup').on('click', function(e) {
-        e.preventDefault(); menu.slideToggle();
+$(document).ready(function(){
+    $('.navbar-fostrap').click(function(){
+        $('.nav-fostrap').toggleClass('visible');
+        $('body').toggleClass('cover-bg');
     });
-
-    $(window).resize(function(){
-        var w = $(this).width(); if(w > 980 && menu.is(':hidden')) {
-            menu.removeAttr('style');
-        }
-    });
-
-    $('nav li').on('click', function(e) {
-        var w = $(window).width(); if(w < 980 ) {
-            menu.slideToggle();
-        }
-    });
-    $('.open-menu').height($(window).height());
 });

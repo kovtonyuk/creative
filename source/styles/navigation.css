@@ -1,7 +1,7 @@
 /*----- Style for navigation on pages -----*/
 li {
     list-style: none;
-    margin-right: 29px;
+    margin-right: 20px;
     text-transform: uppercase;
 }
 
@@ -9,83 +9,36 @@ li:last-child {
     margin-right: 0;
 }
 
-#menu a,
-#menu__social a{
+#nav a,
+#menu__social a {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     color: #777777;
     text-decoration: none;
 }
 
-#menu a:hover,
+#nav a:hover,
 #menu__social a:hover {
+    padding: 11px 0;
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
     border-bottom: 2px solid #ff9c00;
 }
 
-#menu .active a,
+#nav .active a,
 #menu__social .active a {
-    padding: 13px 0;
+    padding: 11px 0;
     color: #ff9c00;
     border-top: 2px solid #ff9c00;
     border-bottom: 2px solid #ff9c00;
 }
 
 /*----- Main menu navigation style with Item Search -----*/
-.nav-menu {
-    z-index: 2;
-    transform: translate3d(0, 0, 0);
-    transition: all .5s ease-in-out;
-}
-
-.nav-menu, .box {
+.box {
     margin: 0;
     overflow: hidden;
     padding: 5px 0;
     position: relative;
-}
-
-.nav-menu .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    color: #777777;
-}
-
-.nav-menu .menu ul {
-    position: relative;
-    width: 100%;
-}
-
-.nav-menu ul,
-.nav-menu li {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    display: inline-block;
-    list-style: none;
-    text-transform: uppercase;
-    height: 30px;
-    line-height: 30px;
-    padding: 1px 0;
-    margin-right: 29px;
-}
-
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-
-.nav-menu a {
-    font-size: 0.875rem;
-}
-
-.nav-menu a:hover {
-    padding: 13px 0;
 }
 
 .box {
@@ -142,65 +95,148 @@ li:last-child {
     width: 170px;
 }
 
-nav li {
-  display: inline;
-  /*float: left;*/
-}
-nav a {
-  text-align: center;
-  text-decoration: none;
-  padding: 15px 0;
+#main .logo {
+    width: 178px;
+    margin: -3px 8px;
+    z-index: 12;
 }
 
-nav a#openup {
-    display: none;
+#main .logo__picture {
+    width: 100%;
 }
 
-@media (max-width: 980px) {
-    .nav-menu {
-        height: auto;
-        border-bottom: 0;
+#main {
+    height: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-fostrap ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.nav-fostrap li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-fostrap li a {
+    display: inline-block;
+    outline: 0;
+    font-weight: 400;
+}
+
+#nav .active a {
+    padding: 11px 0;
+}
+
+@media (max-width:980px) {
+    li {
+        margin: 20px auto;
     }
-    .nav-menu ul {
-        display: none;
-        height: auto;
+
+    #nav a:hover{
+        padding: 0;
+        border: none;
     }
-    .nav-menu li {
+
+    #nav .active a {
+        border: none;
+    }
+
+    #main {
+        flex-wrap: nowrap;
+        padding: 0 50px;
+    }
+
+    #main .logo {
+        margin: -3px 0;
+    }
+
+    .nav-fostrap {
+        background: #131313;
         width: 100%;
-        float: left;
-        position: relative;
-    }
-    /*.nav-menu a {*/
-        /*text-align: left;*/
-        /*width: 100%;*/
-        /*text-indent: 25px;*/
-    /*}*/
-    nav a:hover {
-        background: #444;
-    }
-
-    nav a#openup {
+        height: 100%;
         display: block;
-        width: 100%;
-        position: relative;
+        position: fixed;
+        left: -100%;
+        top: 65px;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition: left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 11;
     }
 
-    nav #openup i {
-        font-size: 1.5rem;
-        margin-right: 50px;
+    .nav-fostrap.visible {
+        text-align: center;
+        top: 65px;
+        left: 0;
+        -webkit-transition: left 0.25s ease;
+        -moz-transition: left 0.25s ease;
+        -ms-transition: left 0.25s ease;
+        -o-transition: left 0.25s ease;
+        transition: left 0.25s ease;
+    }
+
+    .navbar-fostrap {
+        margin: 20px 0;
+    }
+
+    .navbar-fostrap span {
+        height: 2px;
+        background: #fff;
+        margin: 5px auto;
+        display: block;
+        width: 20px;
+    }
+
+    .navbar-fostrap span:nth-child(2) {
+        width: 20px;
+    }
+
+    .navbar-fostrap span:nth-child(3) {
+        width: 20px;
+    }
+
+    .nav-fostrap ul {
+        padding-top: 50px;
+    }
+
+    .nav-fostrap li {
+        display: block;
+    }
+
+    .nav-fostrap li a {
+        display: block;
+        color: #505050;
+        font-weight: 600;
+    }
+
+    .cover-bg {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
-.cf:before, .cf:after {
-    content: "";
-    display: table;
-}
 
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    zoom: 1;
+@media (max-width: 420px) {
+    #main {
+        padding: 0 30px;
+    }
 }
 
 /*----- Sort menu from portfolio navigation style*/

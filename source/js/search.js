@@ -1,5 +1,5 @@
 $(function() {
-    $(".nav-menu > .menu .search .s-b").on("click", function(e) {
+    $(".nav-menu > .nav-fostrap .search .s-b").on("click", function(e) {
         e.preventDefault();
         $("html").addClass("search-exp");
         $(".s-i").focus();

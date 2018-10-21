@@ -26,6 +26,13 @@ img {
     margin: auto;
 }
 
+@media (max-width: 980px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
 /* Title on pages */
 .title__uppercase {
     text-transform: uppercase;
