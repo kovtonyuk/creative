@@ -18,3 +18,9 @@ header .logo {
 header .logo__picture {
     width: 71%;
 }
+
+@media (max-width: 980px) {
+    header .logo {
+        margin: -3px 50px;
+    }
+}

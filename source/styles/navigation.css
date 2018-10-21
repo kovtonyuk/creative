@@ -142,6 +142,68 @@ li:last-child {
     width: 170px;
 }
 
+nav li {
+  display: inline;
+  /*float: left;*/
+}
+nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+}
+
+nav a#openup {
+    display: none;
+}
+
+@media (max-width: 980px) {
+    .nav-menu {
+        height: auto;
+        border-bottom: 0;
+        margin-right: 50px;
+    }
+    .nav-menu ul {
+        display: none;
+        height: auto;
+    }
+    .nav-menu li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    /*.nav-menu a {*/
+        /*text-align: left;*/
+        /*width: 100%;*/
+        /*text-indent: 25px;*/
+    /*}*/
+    nav a:hover {
+        background: #444;
+    }
+
+    nav a#openup {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+
+    nav #openup i {
+        font-size: 1.3rem;
+    }
+}
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
 /*----- Sort menu from portfolio navigation style*/
 #menu_sort {
     margin-top: 43px;

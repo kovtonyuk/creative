@@ -27,24 +27,36 @@
                 <img class="logo__picture" src="images/logo.png" alt="logo">
             </a>
             <div class="nav-menu">
-                <div id="menu" class="menu">
-                    <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <nav id="menu" class="cf menu">
+                    <ul class="cf">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
                         <div class="box">
                             <form action="">
-                                <label class="search" for="search">
+                                <label class="search">
                                     <button class="s-b" type="submit"><i class="fa fa-search"></i></button>
-                                    <input id="search" class="s-i" type="search" placeholder="search..." />
+                                    <input class="s-i" type="search" placeholder="search..."/>
                                 </label>
                             </form>
                         </div>
                     </ul>
-                </div>
-
+                    <a href="#" id="openup">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </nav>
             </div>
         </div>
     </div>
@@ -391,6 +403,7 @@
 </footer>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="js/toggle_menu.js"></script>
 <script src="js/search.js"></script>
 <script src="js/read_more.js"></script>
 <script src="js/sorting_portfolio.js"></script>
