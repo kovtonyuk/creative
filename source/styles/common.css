@@ -20,6 +20,10 @@ img {
     border: 0;
 }
 
+i {
+    cursor: pointer;
+}
+
 .container {
     position: relative;
     max-width: 912px;

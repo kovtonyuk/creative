@@ -211,7 +211,7 @@ li:last-child {
     }
 
     .nav-fostrap ul {
-        padding-top: 50px;
+        border-top: 1px solid #777777;
     }
 
     .nav-fostrap li {
