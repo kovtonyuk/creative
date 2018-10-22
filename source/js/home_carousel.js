@@ -117,4 +117,4 @@ function Carousel(className, timeout, arrows, dotNav) {
     startSlider()
 }
 
-var hero__carousel = new Carousel('.hero_carousel', 5000, true);
+var hero__carousel = new Carousel('.hero_carousel', 500000, true);

@@ -136,7 +136,7 @@ li:last-child {
 }
 
 @media (max-width:980px) {
-    li {
+    #nav li {
         margin: 20px auto;
     }
 
@@ -256,6 +256,23 @@ li:last-child {
     color: #777777;
 }
 
+@media (max-width: 980px) {
+    #menu_sort .menu--sort {
+        margin: 0 50px;
+    }
+
+    #menu_sort li {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #menu_sort .menu--sort {
+        display: block;
+        margin: 50px 0;
+    }
+}
+
 #menu_sort button {
     font-size: 0.8rem;
     font-family: 'Lato', sans-serif;
@@ -294,7 +311,7 @@ li:last-child {
 
 #menu__social .menu--social {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
     color: #777777;
@@ -316,6 +333,21 @@ li:last-child {
 
 #menu__social a:hover {
     padding: 15px 20px;
+}
+
+@media (max-width: 980px) {
+    #menu__social {
+        margin: 33px 50px;
+    }
+
+    #menu__social > ul > li {
+        margin-right: 0;
+    }
+
+    #menu__social a:hover {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
 
 /*----- Menu controls from portfolio details navigation style*/

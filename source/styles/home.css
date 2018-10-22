@@ -76,3 +76,23 @@
 #hero_carousel .button_orange {
     margin-right: 30px;
 }
+
+@media (max-width: 1200px) {
+    .slider--description,
+    .slider--description__two {
+        top: 15%;
+        padding-top: 0;
+        width: 450px;
+    }
+
+    .slide__title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .slider--description,
+    .slider--description__two {
+        display: none;
+    }
+}

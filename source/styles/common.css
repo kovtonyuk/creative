@@ -98,6 +98,12 @@ i {
     text-align: center;
 }
 
+@media (max-width: 980px) {
+    .section__description__head {
+        margin: 0 50px;
+    }
+}
+
 /*----- Style for hero section on pages -----*/
 .hero--description {
     z-index: 10;
@@ -204,6 +210,12 @@ i {
 
 .button-post:hover {
     background: #ff9c00;
+}
+
+@media (max-width: 980px) {
+    .btn {
+        width: 100px;
+    }
 }
 
 /*----- Active class for carousel -----*/
