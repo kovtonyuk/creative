@@ -1,9 +1,5 @@
 #portfolio .hero {
-    position: relative;
-    background: url(../images/portfolio_hero.png) center right no-repeat #f0f0f2;
-    background-size: contain;
-    width: 100%;
-    height: 280px;
+    background-image: url(../images/portfolio_hero.png);
 }
 
 .portfolio__section,
@@ -21,12 +17,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 64px 0 30px;
-}
-
-@media (max-width: 980px) {
-    .portfolio__wrapper {
-        margin: 64px 50px;
-    }
 }
 
 .portfolio__item {
@@ -418,6 +408,12 @@ input:checked ~ .network-list li:nth-child(6) {
 }
 
 /*----- Mobile Style -----*/
+@media (max-width: 980px) {
+    .portfolio__wrapper {
+        margin: 64px 50px;
+    }
+}
+
 @media (max-width: 800px) {
     .portfolio__item {
         width: 50%;

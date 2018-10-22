@@ -30,13 +30,6 @@ i {
     margin: auto;
 }
 
-@media (max-width: 980px) {
-    .container {
-        max-width: 100%;
-        margin: 0;
-    }
-}
-
 /* Title on pages */
 .title__uppercase {
     text-transform: uppercase;
@@ -99,6 +92,16 @@ i {
 }
 
 /*----- Style for hero section on pages -----*/
+.hero {
+    position: relative;
+    background-color: #f0f0f2;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    width: 100%;
+    height: 280px;
+}
+
 .hero--description {
     z-index: 10;
     padding-top: 20px;
@@ -108,7 +111,7 @@ i {
 
 .hero__title,
 .hero__title--blog {
-    width: 350px;
+    max-width: 350px;
     background: #131313;
     padding: 0 0 4px 24px;
     font-family: 'Lato', sans-serif;
@@ -257,13 +260,44 @@ textarea::placeholder {
 
 /*----- Mobile Style -----*/
 @media (max-width: 980px) {
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
     .section__description__head {
         margin: 0 50px;
     }
-}
 
-@media (max-width: 980px) {
+    .hero--description {
+        margin: 0 50px;
+    }
+
     .btn {
         width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__title,
+    .hero__text {
+        max-width: 250px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .hero {
+        background-position: center left;
+        background-size: cover;
     }
 }

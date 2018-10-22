@@ -1,10 +1,6 @@
 /*----- Common style -----*/
-#about .hero {
-    position: relative;
-    background: url(../images/about_hero.png) center right no-repeat #f0f0f2;
-    background-size: contain;
-    width: 100%;
-    height: 280px;
+#about .hero {;
+    background-image: url(../images/about_hero.png);
 }
 
 /*----- Style for about section -----*/
@@ -95,6 +91,7 @@
     font-size: .8rem;
     line-height: 1.5;
 }
+
 /* This stuff is just for the Codepen demo */
 .content-entry {
     text-align: left;
@@ -120,23 +117,28 @@
     padding: 0;
     margin: auto;
 }
+
 .skills-bar-container li {
     position: relative;
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
 }
+
 .skills-bar-container li .progressbar-title {
     color: #505050;
 }
+
 .skills-bar-container li .progressbar-title h3 {
     display: inline-block;
 }
+
 .skills-bar-container li .progressbar-title .percent {
     position: absolute;
     right: 5px;
     top: 25px;
 }
+
 .skills-bar-container li .bar-container {
     background: #ebebeb;
     position: relative;
@@ -145,6 +147,7 @@
     margin-top: 5px;
     display: block;
 }
+
 .skills-bar-container li .bar-container .progressbar {
     position: absolute;
     width: 0;
@@ -169,29 +172,37 @@
     animation-name: progress-javascript;
     animation-delay: 2.1s;
 }
+
 .skills-bar-container li .bar-container #progress-php {
     animation-name: progress-php;
     animation-delay: 2.8s;
 }
+
 .skills-bar-container li .bar-container #progress-web_design {
     animation-name: progress-web_design;
     animation-delay: 3.5s;
 }
+
 .progressred {
     background-color: #c0392b;
 }
+
 .progressblue {
     background-color: #19f;
 }
+
 .progresspurple {
     background-color: #9b59b6;
 }
+
 .progressorange {
     background-color: #ffa500;
 }
+
 .progressgreen {
     background-color: #27ae60;
 }
+
 @keyframes progress-ui {
     0% {
         width: 0%;
@@ -200,6 +211,7 @@
         width: 90%;
     }
 }
+
 @keyframes progress-html {
     0% {
         width: 0%;
@@ -208,6 +220,7 @@
         width: 95%;
     }
 }
+
 @keyframes progress-javascript {
     0% {
         width: 0%;
@@ -216,6 +229,7 @@
         width: 70%;
     }
 }
+
 @keyframes progress-php {
     0% {
         width: 0%;
@@ -224,6 +238,7 @@
         width: 50%;
     }
 }
+
 @keyframes progress-web_design {
     0% {
         width: 0%;
@@ -232,7 +247,6 @@
         width: 85%;
     }
 }
-
 
 /*----- Style for services section -----*/
 .services_section {
