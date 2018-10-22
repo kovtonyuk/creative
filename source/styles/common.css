@@ -236,6 +236,7 @@ i {
 }
 
 .form__input {
+    width: 100%;
     display: block;
     padding: 8px 20px;
     border: 1px solid #d8d8d8;
