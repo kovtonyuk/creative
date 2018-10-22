@@ -35,18 +35,6 @@
     position: relative;
 }
 
-@media (max-width: 800px) {
-    .portfolio__item {
-        width: 50%;
-    }
-}
-
-@media (max-width: 500px) {
-    .portfolio__item {
-        width: 100%;
-    }
-}
-
 .portfolio__item img {
     width: 100%;
     height: 100%;
@@ -427,4 +415,17 @@ input:checked ~ .network-list li:nth-child(6) {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/*----- Mobile Style -----*/
+@media (max-width: 800px) {
+    .portfolio__item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio__item {
+        width: 100%;
+    }
 }

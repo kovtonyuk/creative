@@ -1,17 +1,3 @@
-/*!
- * Waterwheel About Carousel
- * Version 2.3.0
- * https://www.bkosborne.com
- *
- * Copyright 2011-2013 Brian Osborne
- * Dual licensed under GPLv3 or MIT
- * Copies of the licenses have been distributed
- * with this plugin.
- *
- * Plugin written by Brian Osborne
- * for use with the jQuery JavaScript Framework
- * https://www.jquery.com
- */
 ;(function ($) {
     'use strict';
 

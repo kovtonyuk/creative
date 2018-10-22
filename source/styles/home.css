@@ -77,6 +77,7 @@
     margin-right: 30px;
 }
 
+/*----- Mobile Style -----*/
 @media (max-width: 1200px) {
     .slider--description,
     .slider--description__two {
